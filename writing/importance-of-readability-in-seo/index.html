@@ -1,0 +1,589 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Content Readability 101: The Importance of Readability in SEO</title><meta name="description" content="Readability in SEO is important as it helps understand information easily. Writing readable content is now urgent and needful for every writer."><link rel="canonical" href="https://synthseo.online/writing/importance-of-readability-in-seo/"><meta property="og:title" content="Content Readability 101: The Importance of Readability in SEO"><meta property="og:description" content="Readability in SEO is important as it helps understand information easily. Writing readable content is now urgent and needful for every writer."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><script>(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</script><style>
+:root{--bg:#fff;--ink:#0d0d0d;--muted:#5f6368;--brand:#FF904C;--brand-ink:#B45309;--brand-deep:#4A5BE0;--btn:#4A5BE0;
+--card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.09);--code:#f4f5f6;
+--sh:0 1px 2px rgba(13,13,13,.04),0 12px 32px rgba(13,13,13,.07);--r:16px;--max:1120px}
+[data-theme=dark]{--bg:#0d0d0d;--ink:#f1f4f2;--muted:#9aa3ab;--brand:#FF904C;--brand-ink:#FFB27A;--brand-deep:#8DA2FF;--btn:#4A5BE0;
+--card:#141617;--bd:rgba(255,255,255,.07);--bd2:rgba(255,255,255,.12);--code:#17191b;
+--sh:0 1px 2px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.75 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-deep);text-decoration:none}a:hover{text-decoration:underline}
+h1,h2,h3{letter-spacing:-.025em;line-height:1.2}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--bg);
+border-bottom:1px solid var(--bd)}
+.nav{max-width:var(--max);margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:26px}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.02em;color:var(--brand-ink);margin-right:auto}
+.brand i{font-style:normal;color:var(--brand-deep)}
+.nav a.nl{color:var(--muted);font-weight:500;font-size:15px}.nav a.nl:hover{color:var(--ink);text-decoration:none}
+.btn{display:inline-block;background:var(--btn);color:#fff!important;font-weight:600;font-size:15px;
+padding:10px 24px;border-radius:9999px;border:0;cursor:pointer;letter-spacing:-.01em}
+.btn:hover{filter:brightness(1.1);text-decoration:none}
+.iconbtn{background:var(--code);border:1px solid var(--bd2);border-radius:9999px;width:44px;height:44px;flex:none;
+cursor:pointer;font-size:16px;line-height:1;color:var(--ink)}
+.searchbox{position:relative}
+.searchbox input{background:var(--code);border:1px solid var(--bd2);border-radius:9999px;color:var(--ink);
+padding:9px 18px;font:14px Inter,system-ui,sans-serif;width:210px;outline:none}
+.searchbox input:focus{border-color:var(--brand)}
+.searchres{position:absolute;top:46px;right:0;width:320px;background:var(--card);border:1px solid var(--bd2);
+border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:none}
+.searchres a{display:block;padding:12px 18px;color:var(--ink)}.searchres a:hover{background:var(--code);text-decoration:none}
+.searchres small{color:var(--muted);display:block;font-size:12px}
+/* hero */
+.hero{padding:64px 0 8px;text-align:left}
+.hero.slim{padding:48px 0 4px}
+.eyebrow{display:block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--muted);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5vw,54px);margin:0 0 16px;letter-spacing:-.035em}
+.hero p{color:var(--muted);font-size:19px;max-width:640px;margin:0 0 20px}
+.readmore{font-weight:600;font-size:16px}
+/* editorial list (Explore): one featured post + compact secondary rows */
+.feat-post{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
+padding:36px 0 40px;border-bottom:1px solid var(--bd2)}
+.feat-post h2{font-size:clamp(26px,3.6vw,38px);margin:10px 0 12px;letter-spacing:-.03em}
+.feat-post h2 a{color:var(--ink)}
+.feat-post p{color:var(--muted);font-size:17px;margin:0 0 12px;max-width:56ch}
+.feat-post img{width:100%;border-radius:var(--r)}
+.rows{padding:8px 0 64px}
+.rows-head{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--muted);margin:0;padding:28px 0 4px}
+.row{padding:22px 0;border-bottom:1px solid var(--bd)}
+.row h2{font-size:20px;margin:4px 0 6px}.row h2 a{color:var(--ink)}
+.row p{color:var(--muted);font-size:15px;margin:0 0 8px;max-width:70ch}
+.cat{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+color:var(--brand-ink);margin-bottom:8px}
+.meta{font-size:13px;color:var(--muted)}
+/* post */
+.post-layout{display:block;max-width:840px;padding:48px 0 24px}
+article.post h1{font-size:clamp(28px,4vw,42px);margin:8px 0 12px;letter-spacing:-.03em}
+article.post img{max-width:100%;height:auto;border-radius:12px}
+.feat{width:100%;max-height:400px;object-fit:cover;border-radius:var(--r);margin:20px 0 8px}
+.prose{font-size:17px;overflow-wrap:break-word;word-wrap:break-word}.prose h2{font-size:26px;margin:44px 0 12px}.prose h3{font-size:20px;margin:32px 0 8px}
+.prose pre{background:var(--code);padding:18px 22px;border-radius:12px;overflow:auto;font-size:14px}
+.prose code{background:var(--code);padding:2px 7px;border-radius:6px;font-size:.9em}
+.prose blockquote{border-left:3px solid var(--brand);margin:24px 0;padding:4px 0 4px 20px;color:var(--muted)}
+.toc-card{margin:26px 0 6px;border:1px solid var(--bd2);border-radius:var(--r);background:var(--card);box-shadow:var(--sh);padding:16px 22px;font-size:15px}
+.toc-card summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:10px;list-style:none;font-weight:700}
+.toc-card summary::-webkit-details-marker{display:none}
+.toc-card summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;flex:none;border-radius:8px;background:color-mix(in srgb,var(--brand) 16%,transparent);color:var(--brand-ink);font-weight:800}
+.toc-card[open] summary::before{content:"–"}
+.toc-card .toc-k{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.toc-card ul{list-style:none;margin:12px 0 4px;padding:14px 0 0;border-top:1px solid var(--bd)}
+.toc-card li{margin:8px 0;line-height:1.5}
+.toc-card li.toc-h3{padding-left:16px}
+.toc-card a{color:var(--muted)}
+.toc-card a:hover{color:var(--brand-deep)}
+/* subscribe */
+.cta{border:1px solid var(--bd);border-radius:20px;box-shadow:var(--sh);padding:40px 36px;text-align:left;
+margin:24px 0 72px;background:var(--card)}
+.cta h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 10px;letter-spacing:-.03em}
+.cta p{color:var(--muted);margin:0 0 24px}
+.cta form{display:flex;gap:10px;justify-content:flex-start;flex-wrap:wrap}
+.cta input[type=email]{border:1px solid var(--bd2);border-radius:9999px;padding:12px 22px;font-size:15px;
+width:min(320px,100%);background:var(--bg);color:var(--ink);outline:none}
+.cta input[type=email]:focus{border-color:var(--brand)}
+.cta .ok{display:none;color:var(--brand-deep);font-weight:600}
+footer{border-top:1px solid var(--bd);padding:36px 0 48px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+footer .sp{margin-left:auto;display:flex;gap:18px}
+@media(max-width:640px){.searchbox input{width:140px}.nav{gap:14px;padding:12px 16px}.wrap{padding:0 20px}.hero{padding:56px 0 16px}}
+/* mobile: hamburger nav, single column, fluid media + type, 44px tap targets */
+.ham{display:none;background:var(--code);border:1px solid var(--bd2);border-radius:10px;min-width:44px;min-height:44px;font-size:18px;line-height:1;color:var(--ink);cursor:pointer}
+img{max-width:100%;height:auto}
+.prose table{display:block;max-width:100%;overflow-x:auto}
+.prose pre{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.prose img{max-width:100%;height:auto}
+body{font-size:clamp(15px,.4vw + 14px,17px)}
+@media(max-width:768px){
+.nav{flex-wrap:wrap;gap:10px;padding:12px 16px}
+.ham{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;order:2}
+#themebtn{order:3}
+.nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
+.nav .searchbox{display:none;width:100%;order:4}
+.nav .searchbox input{width:100%}
+.nav.open a.nl,.nav.open .searchbox{display:block}
+.feat-post{grid-template-columns:1fr;gap:20px;padding:28px 0 32px}
+.hero{padding:56px 0 16px}
+.hero h1{font-size:clamp(30px,8vw,42px)}
+.hero p{font-size:clamp(16px,4.5vw,19px)}
+article.post h1{font-size:clamp(26px,7vw,34px)}
+.prose{font-size:clamp(16px,4.4vw,17px)}
+.prose h2{font-size:clamp(22px,5.6vw,26px)}
+.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.cta{padding:40px 20px}
+.wrap{padding:0 20px}
+}
+/* a11y: skip link, visible focus, TOC depth, reduced motion */
+.skip{position:absolute;left:16px;top:-72px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px;color:var(--bg);text-decoration:none}
+.vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--brand-deep);outline-offset:2px}
+.toc-card li.toc-h4{padding-left:32px}
+.prose a{overflow-wrap:break-word}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="post-layout"><article class="post"><span class="cat">writing</span><h1>Content Readability 101: The Importance of Readability in SEO</h1><div class="meta">2024-03-20 · 13 min read · seo, readable</div><img class="feat" src="/uploads/2026/07/readability20in20search20engine20optimisation.png" alt="Content Readability 101: The Importance of Readability in SEO" onerror="this.style.display='none'"><details class="toc-card" open><summary><span class="toc-k">On this page</span></summary><ul><li class="toc-h2"><a href="#reading-is-the-simplest-action-yet-it-can-be-overwhelming">Reading is the simplest action, yet it can be overwhelming.</a></li><li class="toc-h2"><a href="#why-is-readability-important-in-search-engine-optimisation">Why is readability important in Search Engine Optimisation?</a></li><li class="toc-h2"><a href="#tips-for-writing-readable-content-for-search-engine-optimisa">Tips for writing readable content for Search Engine Optimisation</a></li><li class="toc-h3"><a href="#1-use-simple-language">#1: Use simple language</a></li><li class="toc-h3"><a href="#2-reduce-unnecessary-words">#2: Reduce unnecessary words</a></li><li class="toc-h3"><a href="#3-clear-structure">#3: Clear structure</a></li><li class="toc-h2"><a href="#tools-for-checking-seo-content-readability">Tools for checking SEO content readability</a></li><li class="toc-h3"><a href="#flesch-kincaid-readability">Flesch-Kincaid readability</a></li><li class="toc-h3"><a href="#hemingway-readability-test">Hemingway readability test</a></li><li class="toc-h3"><a href="#gunning-fog-index">Gunning Fog Index</a></li><li class="toc-h3"><a href="#smog-index">SMOG Index</a></li><li class="toc-h2"><a href="#wordpress-plugins-to-measure-readability">WordPress plugins to measure readability</a></li><li class="toc-h3"><a href="#yoast">Yoast</a></li><li class="toc-h3"><a href="#rankmath">RankMath</a></li><li class="toc-h3"><a href="#all-in-one-seo">All in One SEO</a></li><li class="toc-h3"><a href="#notion-seo">Notion SEO</a></li><li class="toc-h2"><a href="#summary">Summary</a></li></ul></details><div class="prose">
+<h2 class="wp-block-heading" id="reading-is-the-simplest-action-yet-it-can-be-overwhelming">Reading is the simplest action, yet it can be overwhelming.</h2>
+
+<p>Nobody wants to <strong>read complex content</strong>. Why?</p>
+
+<p>Because none wants to <strong>put their energy</strong> into something futile, having no benefits. Unless it trades in <strong>great value</strong> for the users or readers.</p>
+
+<p>Writing <strong>readable content</strong> is now urgent and needful for every writer regardless of their domain. People stop reading as soon as they find something difficult to understand.</p>
+
+<p>So, whether you are a copywriter, content writer, scriptwriter or alike. You need to write with a <strong>focus on readability</strong>.</p>
+
+<p>The <strong>simpler the language</strong> the <strong>less brain power</strong> is used in reading and understanding. Still, writing clearly and simply is a challenging path every writer goes through.</p>
+
+<figure class="wp-block-image size-large has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2026/07/readability20in20search20engine20optimisation-1024x576.png" alt="" class="wp-image-5736" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px"/></figure>
+
+<p><strong>Figure 1: Readability in Search Engine Optimisation</strong></p>
+
+<p style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">Readability in SEO is important as it helps <strong>understand the information</strong> easily.</p>
+
+<p>But, how do you write content which <strong>soothes readers</strong> and helps them continue their reading voyage?</p>
+
+<p>Before we dive into “how to write readable content?” or “what tools to use to improve readability in SEO?” let’s understand the importance of SEO readability first.</p>
+
+<h2 class="wp-block-heading" id="why-is-readability-important-in-search-engine-optimisation">Why is readability important in Search Engine Optimisation?</h2>
+
+<p>As discussed, readability is essential in SEO because it helps convey information clearly.</p>
+
+<p>The readers can understand exactly <strong>what is being said</strong> in a written form. So, the content is more likely to be <strong>shared with others</strong>.</p>
+
+<p>Google <strong>rewards</strong> quality content with <strong>higher ranks</strong> on the SERPs and readability is a key trait of such forms of content.</p>
+
+<p>Above all, <strong>readability is an essential factor in SEO</strong>.</p>
+
+<p>Readable content reduces the <strong>bounce rate</strong> (the percentage of users that visit a site and leave without further navigating it).</p>
+
+<p>Ultimately, the readers are more and more engaged with your content.</p>
+
+<ol class="wp-block-list">
+<li>Ease in understanding</li>
+
+<li>More shares</li>
+
+<li>Higher chances of ranking on SERPs</li>
+
+<li>Lower bounce rate</li>
+
+<li>Increased reader engagement</li>
+</ol>
+
+<h2 class="wp-block-heading" id="tips-for-writing-readable-content-for-search-engine-optimisa">Tips for writing readable content for Search Engine Optimisation</h2>
+
+<p><strong><a href="https://uk.linkedin.com/in/mattjbarker1?trk=public_post_feed-actor-image">Matt Barker</a> is a copywriter</strong> well-known for his <strong>simple yet creative writing</strong> stance. Barker shows exceptional quality in being straightforward and precise in his sayings.</p>
+
+<p>This has eased reading for his audience.</p>
+
+<p>His post “<strong>3 Tips To Write Concisely</strong>” cuts the fluff and puts the essentials for creating readable content on the top of the table.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/three-tips-for-readable-content.png" alt="Three tips for readable content" class="wp-image-5130" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 1: Three tips for readable content</strong></figcaption></figure>
+
+<p>Let’s break down each step and create readable SEO-optimised content.</p>
+
+<h3 class="wp-block-heading" id="1-use-simple-language">#1: Use simple language</h3>
+
+<figure class="wp-block-pullquote" style="border-radius:25px"><blockquote><p>People get bored easily.</p><cite>- Matt Barker</cite></blockquote></figure>
+
+<p style="margin-top:var(--wp--preset--spacing--40)">But why do they <strong>get bored easily</strong>?</p>
+
+<p>Complex writing exhausts the reader’s mind.</p>
+
+<p>When <strong><a href="https://www.linkedin.com/posts/mattjbarker1_3-tips-to-write-concisely-without-spending-activity-6978245696994865152-WqqA">language is simple</a></strong>, people don’t have to <strong>put stress</strong> on understanding.</p>
+
+<p>Have you ever read something and got like “Wait, what does that mean?” and then paused, trying to understand the meaning?</p>
+
+<p>Now, you have to <strong>re-read</strong> just because you were zoned out.</p>
+
+<p>This was because while reading, your <strong>brain juggles</strong> between reading and interpreting simultaneously.</p>
+
+<p><strong><a href="https://www.linkedin.com/posts/mattjbarker1_3-tips-to-write-concisely-without-spending-activity-6978245696994865152-WqqA">Matt says</a></strong> simple language makes:</p>
+
+<ol class="wp-block-list">
+<li>Reading easy</li>
+
+<li>Less brain power in reading</li>
+</ol>
+
+<p>So, <strong>write like</strong> you are <strong>teaching a 7-year-old kid</strong>. Write like you are <strong>speaking</strong>.</p>
+
+<p><strong>Simple language</strong> comes in with <strong>natural speaking</strong>. Writing as speaking to an audience will add more <strong>authority and confidence</strong> in tone of voice</p>
+
+<p>And this has a direct impact on readability.</p>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Write in active voice as much as possible. Avoid passive sentences as they have lower readability scores when compared with active sentences.</p>
+</blockquote>
+
+<h3 class="wp-block-heading" id="2-reduce-unnecessary-words">#2: Reduce unnecessary words</h3>
+
+<p>We humans easily get carried away in when it comes to exaggerating. This is reflected in writing too.</p>
+
+<p>Writers tend to use <strong>unique words</strong> which sometimes are extremely <strong>idiosyncratic</strong>.</p>
+
+<p>Even though it is necessary to have a <strong>balance between</strong> <strong>common</strong> words and <strong>unique</strong> words in Search Engine Optimisation. Still, adding unnecessary words blurs writing which has a significant impact on readability.</p>
+
+<p>Consider this paragraph,</p>
+
+<p>“The results of the formulated hypotheses express that the whole of the research conducted has been totally associated with the…”</p>
+
+<p>It is indeed <strong>laborious</strong> to read and even to speak.</p>
+
+<p>Kicking out <strong><a href="https://www.linkedin.com/posts/mattjbarker1_3-tips-to-write-concisely-without-spending-activity-6978245696994865152-WqqA">useless words</a></strong> that don’t add any value or improve the meaning is mandatory for smooth a read.</p>
+
+<p>Instead, writing or saying just “<strong>The results</strong>” and then simply pointing out the outcomes is certainly a good action.</p>
+
+<p><strong>Shun weak words</strong> like:</p>
+
+<ol class="wp-block-list">
+<li>Very</li>
+
+<li>Really</li>
+
+<li>Literally</li>
+
+<li>And so on.</li>
+</ol>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Look out for synonyms for words that are too basic to keep a balance between common-unique words.</p>
+</blockquote>
+
+<h3 class="wp-block-heading" id="3-clear-structure">#3: Clear structure</h3>
+
+<p>The <strong>structure is the backbone</strong> of any write-up, whether it be a blog, article or anything.</p>
+
+<p>A <strong>seamless structure</strong> assists readers in flowing through the text and scanning the content fluently.</p>
+
+<p>Thus, having a structure which obstructs and <strong>clogs reading</strong> isn’t something you should be putting in your effort.</p>
+
+<p>Break the <strong>information into chunks</strong>. Use <strong>headings and subheadings</strong> and place relevant information under each one. Below is an example of how to structure your content.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/good-and-bad-structure.png" alt="Good and bad website structure" class="wp-image-5150" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 2: Good and bad website structure</strong></figcaption></figure>
+
+<p><strong><a href="https://www.linkedin.com/posts/mattjbarker1_3-tips-to-write-concisely-without-spending-activity-6978245696994865152-WqqA">Matt also suggests</a></strong> keeping<strong> the sentence shorter</strong>. Sentences having <strong>8 to 12 words</strong> are enough.</p>
+
+<figure class="wp-block-pullquote" style="border-radius:25px"><blockquote><p>3 commas in a sentence? Start over.</p><cite>- Matt Barker</cite></blockquote></figure>
+
+<p style="margin-top:var(--wp--preset--spacing--40)">Using <strong>full stops</strong> <strong>instead of commas</strong> can break <strong>complex sentences</strong> into simpler ones that are readable.</p>
+
+<p>Finally, write what’s necessary and <strong>don’t waste other’s time</strong>.</p>
+
+<p><strong>TL; DR</strong></p>
+
+<ul class="wp-block-list">
+<li>Have a fluid content structure</li>
+
+<li>Use full-stops throughout</li>
+
+<li>Respect other’s time by mentioning only what’s necessary</li>
+</ul>
+
+<p><strong>Additional tips:</strong></p>
+
+<ol class="wp-block-list">
+<li>Use fonts that are understood easily. Fonts that are <strong>too cursive</strong> or <strong>too flat</strong> should be avoided.</li>
+
+<li>A <strong>contrast</strong> must be maintained between the <strong>font colour</strong> and <strong>background colour</strong>. Some good combinations include black (text) with white (background) and yellow (text) with royal blue (background).</li>
+
+<li>Small paragraphs are soft on the eyes. Paragraphs having <strong>two to three sentences</strong> are enough as they offer optimal readability.</li>
+</ol>
+
+<h2 class="wp-block-heading" id="tools-for-checking-seo-content-readability">Tools for checking SEO content readability</h2>
+
+<p>There are several tools to check and assess readability in SEO for a piece of content.</p>
+
+<p>To estimate the readability of a piece of writing just copy and paste in the field provided.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/Readable-1.png" alt="readability-tools" class="wp-image-5292" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 3: Different readability checking tools</strong></figcaption></figure>
+
+<p>This applies to all the SEO readability tools to be discussed.</p>
+
+<h3 class="wp-block-heading" id="flesch-kincaid-readability">Flesch-Kincaid readability</h3>
+
+<p>The <a href="https://charactercalculator.com/flesch-reading-ease/"><strong>Flesch-Kincaid</strong></a> reading ease test in SEO is considered one of the most accurate—the scores on the tool range from <strong>0 to 100</strong>.</p>
+
+<p>It expresses the difficulty experienced by an average person to understand the text.</p>
+
+<p>Higher scores mean better and easier reading. But, <strong>scoring above 70</strong> means the text is fairly easy to read.</p>
+
+<p>The following is the formula used to calculate readability scores for Flesch-Kincaid.</p>
+
+<pre class="wp-block-code has-palette-color-7-background-color has-background"><code>206.835 - 1.015 × (number of words/number of sentences) - 84.6 × (number of syllables ÷ number of words) </code></pre>
+
+<p>The following table defines the score, reading difficulty and grade of the tool.</p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table class="has-palette-color-7-background-color has-background has-fixed-layout" style="border-style:none;border-width:0px"><thead><tr><th>Score</th><th>Reading Level</th><th>Grade</th></tr></thead><tbody><tr><td>0 to 10</td><td>Most difficult</td><td>Professional</td></tr><tr><td>10 to 30</td><td>Very difficult</td><td>Graduate</td></tr><tr><td>30 to 50</td><td>Difficult</td><td>College student</td></tr><tr><td>50 to 60</td><td>Fairly difficult</td><td>10th to 12th grade</td></tr><tr><td>60 to 70</td><td>Simple English</td><td>8th and 9th grade</td></tr><tr><td>70 to 80</td><td>Fairly easy</td><td>7th grade</td></tr><tr><td>80 to 90</td><td>Easy</td><td>6th grade</td></tr><tr><td>90 to 100</td><td>Very easy</td><td>5th grade</td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table 1: Flesch-Kincaid scores</strong></figcaption></figure>
+
+<p>Below is an example of the Flesch-Kincaid Ease Calculator in SEO:</p>
+
+<figure class="wp-block-image aligncenter size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/Flesch-Kincaid-reading-ease-calculator.png" alt="Flesch-Kincaid reading ease calculator" class="wp-image-5135" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 4: Flesch-Kincaid reading ease calculator</strong></figcaption></figure>
+
+<h3 class="wp-block-heading" id="hemingway-readability-test">Hemingway readability test</h3>
+
+<p>Hemingway offers a more interactive and intuitive experience to improve your readability scores. <strong><a href="https://hemingwayapp.com/">Hemingway Editor</a></strong> (named after the founder Ernst Hemingway) is a web-based application that helps people write clearly and simply.</p>
+
+<p>This tool offers you different grades based on the level of writing.</p>
+
+<p>Starting from Grade 1, Grade 2 and so on. The lower the grade the better the readability.</p>
+
+<p>A text <strong>scoring Grade 10</strong> is considered <strong>okay</strong>, but anything below <strong>Grade 9</strong> is believed <strong>good</strong>.</p>
+
+<p>However, achieving such lower grades is futile as the different types of writing are targeted at audiences who have attended at least the 8th and 9th classes.</p>
+
+<figure class="wp-block-image aligncenter size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/Hemingway-Editor-for-readability-edited.png" alt="Hemingway Editor for readability" class="wp-image-5160" style="border-radius:10px;object-fit:cover"/><figcaption class="wp-element-caption"><strong>Figure 5: Hemingway Editor for readability</strong></figcaption></figure>
+
+<p>The Hemingway Editor focuses on <strong><a href="https://www.cvsce.org.uk/hemmingway-app-better-written-content#:~:text=Ernest Hemingway's work is estimated,writing between Grades 5–8.">five different components</a></strong> of a sentence. It assesses the content in terms of numbers of:</p>
+
+<ol class="wp-block-list">
+<li>Adverbs (blue coloured)</li>
+
+<li>Passive voice (green coloured)</li>
+
+<li>Simpler alternatives (purple coloured)</li>
+
+<li>Hard sentences (yellow coloured)</li>
+
+<li>Very hard sentences (red coloured)</li>
+</ol>
+
+<p>The tool to assess readability in SEO highlights the issues in the different colours mentioned.</p>
+
+<p>This improves shortening the sentences, removing adverbs, avoiding excess use of passive tone and simpler options for sentences.</p>
+
+<p>Using Hemingway Editor can be sometimes overwhelming. I feel sometimes it agitates clarity thus losing uniqueness and creativity in the content.</p>
+
+<p>However, it offers formatting tools as well so you can structure your content as you write.</p>
+
+<h3 class="wp-block-heading" id="gunning-fog-index">Gunning Fog Index</h3>
+
+<p><strong><a href="https://charactercalculator.com/gunning-fog-index/">Gunning Fog</a></strong> is named after <strong>Robert Gunning</strong> an American merchant. This method of readability evaluation was discovered in 1952.</p>
+
+<p>As compared to Flesch-Kincaid, Gunning Fog also bestows an overall understanding of the write-up.</p>
+
+<p>It assesses the number of words, complex terms and sentences. The tradition of low scores means better readability is also applicable for this tool.</p>
+
+<p>Gunning Fog grade or score ranges from <strong>6 to 17</strong> in terms of <strong>content readability</strong>.</p>
+
+<p>Below is the formula used to measure the readability of a text <strong>having 100 sentences</strong>.</p>
+
+<pre class="wp-block-code has-palette-color-7-background-color has-background"><code>0.4 × ((number of words ÷ number of sentences) + 100 × number complex words ÷ number of words)</code></pre>
+
+<p>The Gunning Fog index follows the adjacent chart and gives a rank as per it.</p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table class="has-palette-color-7-background-color has-background has-fixed-layout" style="border-style:none;border-width:0px"><thead><tr><th>Score</th><th>Educational level</th><th>Grade</th></tr></thead><tbody><tr><td>6</td><td>Elementary</td><td>Sixth</td></tr><tr><td>7</td><td></td><td>Seventh</td></tr><tr><td>8</td><td></td><td>Eighth</td></tr><tr><td>9</td><td>High school</td><td>Newcomer</td></tr><tr><td>10</td><td></td><td>Sophomore</td></tr><tr><td>11</td><td></td><td>Junior</td></tr><tr><td>12</td><td></td><td>Senior</td></tr><tr><td>13</td><td>College</td><td>Newcomer</td></tr><tr><td>14</td><td></td><td>Sophomore</td></tr><tr><td>15</td><td></td><td>Junior</td></tr><tr><td>16</td><td></td><td>Senior</td></tr><tr><td>17</td><td></td><td>Graduate</td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table 2: Gunning Fog scores</strong></figcaption></figure>
+
+<p>An example of the Gunning Fog index to evaluate the readability of SEO content is attached:</p>
+
+<figure class="wp-block-image aligncenter size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/Gunning-Fog-Index.png" alt="Gunning Fog Index" class="wp-image-5139" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 6: Gunning Fog Index</strong></figcaption></figure>
+
+<h3 class="wp-block-heading" id="smog-index">SMOG Index</h3>
+
+<p>SMOG stands for “<strong><a href="https://charactercalculator.com/smog-readability/">Simple Measure of Gobbledygook</a></strong>”. Developed in 1969 as an alternative to the Gunning Fog Index for the <strong>healthcare sector</strong> by G. Harry McLaughlin.</p>
+
+<p>To bring down the score of the test and improve readability, one should limit the number of times words having <strong>three or more than three syllables</strong> used.</p>
+
+<p>The formula to calculate SMOG readability for <strong>100 sentences</strong> is as follows:</p>
+
+<pre class="wp-block-code has-palette-color-7-background-color has-background"><code>1.0430 × square root(number of polysyllables × (100 ÷ number of sentences)) + 3.1291</code></pre>
+
+<p>Moreover, the following are the scores and level of education for the said test:</p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table class="has-palette-color-7-background-color has-background has-fixed-layout" style="border-style:none;border-width:0px"><thead><tr><th>Score</th><th>Educational level</th></tr></thead><tbody><tr><td>4.9 or below</td><td>Elementary school</td></tr><tr><td>5 to 8.9</td><td>Middle school</td></tr><tr><td>9 to 12.9</td><td>High school</td></tr><tr><td>13 to 16.9</td><td>Undergraduate</td></tr><tr><td>17 or more</td><td>Graduate</td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table 3: SMOG scores</strong></figcaption></figure>
+
+<p>An example of the results of the SMOG readability test is pinned below:</p>
+
+<figure class="wp-block-image aligncenter size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/SMOG-Readability.png" alt="SMOG Readability" class="wp-image-5142" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 7: SMOG Readability</strong></figcaption></figure>
+
+<h2 class="wp-block-heading" id="wordpress-plugins-to-measure-readability">WordPress plugins to measure readability</h2>
+
+<p>WordPress is indeed a <strong>go-to platform</strong> for designing websites. Bloggers and writers prioritise <a href="https://wordpress.com/"><strong>WordPress</strong></a> over other CMS (Content Management Systems) out there.</p>
+
+<p>Over the years, WordPress has evolved into a complete solution for businesses, marketers, writers, bloggers and anyone associated with the internet.</p>
+
+<p>WordPress comes with <strong>handy-dandy plugins</strong> making selling, marketing and blogging just some finger taps.</p>
+
+<p>Writers on WordPress have implemented various plugins to estimate how readable their content is.</p>
+
+<p>These are a handful of <strong>plugins</strong> on which you can rely without any doubt.</p>
+
+<figure class="wp-block-image aligncenter size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/wordpress-readability-plugins.png" alt="WordPress plugins to measure readability" class="wp-image-5143" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 8: WordPress plugins to measure readability</strong></figcaption></figure>
+
+<h3 class="wp-block-heading" id="yoast">Yoast</h3>
+
+<p>Yoast SEO is well-known for readability. The tool doesn’t require much introduction if you are already a writer on WordPress.</p>
+
+<p>Yet, the advantages of using Yoast are worth mentioning.</p>
+
+<p>The plugin comes with inbuilt features like search engine preview, social media preview tools and integration like <strong>Semrush and Wincher</strong>. But, the readability analysis tool takes the game to the next level.</p>
+
+<p>Yoast’s readability analysis tools come in <strong>two versions</strong>:</p>
+
+<ol class="wp-block-list">
+<li>Free</li>
+
+<li>Paid</li>
+</ol>
+
+<p>The <strong>free version</strong> includes almost every feature. The tool gives suggestions in the following areas:</p>
+
+<ul class="wp-block-list">
+<li>Use of a limited number of passive voice</li>
+
+<li>Distribution of subheadings</li>
+
+<li>Length of paragraphs</li>
+
+<li>Number of transition words</li>
+
+<li>Use of inclusive language</li>
+</ul>
+
+<p>Here’s an example from my previous post on <strong><a href="/link-building/proven-link-building-strategies/">proven link building strategies</a></strong>.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/Yoast-SEO-in-action.png" alt="Yoast SEO in action" class="wp-image-5144" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 9: Yoast SEO in action</strong></figcaption></figure>
+
+<h3 class="wp-block-heading" id="rankmath">RankMath</h3>
+
+<p>RankMath is another big name in the kingdom of SEO. Some users prefer RankMath over Yoast, yet both of them allow you to have total authority on on-page SEO.</p>
+
+<p>For <strong>beginners and newbies</strong>, I feel <strong>RankMath</strong> can be a great initiative. Why?</p>
+
+<p>Because of the <strong>simple user interface,</strong> it offers. Let’s break this down.</p>
+
+<p>RankMath categories aspects of SEO into <strong>four categories</strong>:</p>
+
+<ol class="wp-block-list">
+<li>General</li>
+
+<li>Advanced</li>
+
+<li>Schema generation</li>
+
+<li>Social appearance</li>
+</ol>
+
+<p>Under the general section, it covers the basics:</p>
+
+<ul class="wp-block-list">
+<li>Focus keyword</li>
+
+<li>Basic SEO</li>
+
+<li>Additional</li>
+
+<li>Title readability</li>
+
+<li>Content readability</li>
+</ul>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/RankMath-in-action.png" alt="RankMath in action" class="wp-image-5145" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 10: RankMath in action</strong></figcaption></figure>
+
+<p>Simply, RankMath shapes everything for the users. Above all these, it offers an <strong>SEO score</strong> for every post <strong>out of 100</strong>.</p>
+
+<p>I have been able to maintain SEO scores <strong>above 90</strong> for almost all of my posts. Some of them have reached <strong>100 out of 100</strong> like the above one on <strong><a href="/keyword-research/keyword-research-first-step/">keyword research</a></strong> which is the first step to triumph SEO.</p>
+
+<h3 class="wp-block-heading" id="all-in-one-seo">All in One SEO</h3>
+
+<p>All in One SEO abbreviated as <strong>AISEO</strong> is also a remarkable tool for improving readability in Search Engine Optimisation.</p>
+
+<p>AISEO is very <strong>practical and pragmatic</strong> regarding its interface. The developers have decluttered a lot of features that are less important and have structured how we use the tool.</p>
+
+<p>The tool is not much associated with content readability, but it focuses on <strong>heading readability</strong> and persuasiveness.</p>
+
+<p>AISEO has this additional feature for “<strong>SEO Headline Analyzer</strong>”. Here one can assess the title of the post in terms of:</p>
+
+<ol class="wp-block-list">
+<li>Word balance</li>
+
+<li>Sentiment</li>
+
+<li>Type of headline</li>
+
+<li>Character count</li>
+
+<li>Word count</li>
+
+<li>Beginning and ending words</li>
+
+<li>Search preview</li>
+</ol>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/AISEO-in-action.png" alt="AISEO in action" class="wp-image-5146" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 11: AISEO in action</strong></figcaption></figure>
+
+<p>AISEO places a lot of emphasis on the importance of <strong>having a headline or title</strong> which entices users.</p>
+
+<p>This is the reason, the tool focuses on creating titles that are not just readable but also persuasive and convincing to explore.</p>
+
+<p>You can also try <strong>a different headline</strong> without messing up the current one which is an exceptional feature. This allows experimenting and discovering the most suitable one.</p>
+
+<p>Finally, based on different factors, the tool offers an overall <strong>score for the title</strong> with suitable improvements here and there.</p>
+
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/AISEOs-SEO-Headline-Analyzer-score.png" alt="AISEO’s SEO Headline Analyzer score" class="wp-image-5147" style="border-radius:10px;width:375px;height:auto"/><figcaption class="wp-element-caption"><strong>Figure 12: AISEO’s SEO Headline Analyzer score</strong></figcaption></figure>
+
+<p>Scoring between <strong>70 and 90</strong> is considered <strong>very good</strong>. I have scored <strong>81/100</strong> for my post on <a href="/category/general-seo/"><strong>Search Engine Optimisation</strong></a>.</p>
+
+<h3 class="wp-block-heading" id="notion-seo">Notion SEO</h3>
+
+<p>Notion SEO is designed with a focus on <strong>Notion users</strong>.</p>
+
+<p>Designed by Shivam, Notion SEO offers <strong>three key metrics</strong> to measure. SEO score, readability score and number of unique words.</p>
+
+<p>For better SEO scores, you need to add target keyword(s), links and visual content.</p>
+
+<p>The <strong>readability section</strong> consists of almost <strong>all the metrics</strong> discussed including Flesch-Kincaid, Gunning Fog, SMOG and others.</p>
+
+<p>Only Flesch-Kincaid is free to use, a recurrent purchase of ₹423.82/month or $5/month has to be made to unlock all features.</p>
+
+<p><strong>Content uniqueness</strong> is equally significant and having a balance between <strong>unique-common words</strong> improves readability and preserves the interest of readers.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/03/notion-seo-plugin.png" alt="NotionSEO in action" class="wp-image-5148" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 13: NotionSEO in action</strong></figcaption></figure>
+
+<p>I personally write all my blog posts for <a href="/"><strong>SynthSEO</strong></a> on Notion and rigorously use Notion SEO. I also use the tool to write for <strong><a href="https://shahzebspeaks.medium.com/">my posts on Medium</a></strong>.</p>
+
+<p>Notion SEO grants users with a better insight into how they are writing.</p>
+
+<h2 class="wp-block-heading" id="summary">Summary</h2>
+
+<p>Readability for SEO is impartially important as doing keyword research, image optimisation, getting the page indexed and others.</p>
+
+<p>Neglecting readability can mess things up such as increased bounce rate.</p>
+
+<p>And that is significantly impactful on how search engines perceive a website or page. Combining tools like Hemingway and RankMath can seriously improve SEO and readability helping retain readers or users.</p>
+</div></article></div><section class="cta" aria-labelledby="nl-h"><h2 id="nl-h">Get practical SEO tips in your inbox</h2><p>One short, actionable guide at a time. No spam, unsubscribe anytime.</p><form aria-label="Subscribe to SEO tips" onsubmit="return __subscribe(this)"><label class="vh" for="nl-email">Email address</label><input id="nl-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"><button class="btn" type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite" tabindex="-1">You're on the list — welcome aboard!</p></section></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it d","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"WordPress Plugins are add-ons that enhance user experience and enrich utility and accessibility. They are small programs","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Readability in SEO is important as it helps understand information easily. Writing readable content is now urgent and ne","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"Link building is the practice of getting your website connected to others. It includes activities where other websites l","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand ","c":"keyword-research","r":"25 min read"}];</script><script>
+(function(){var box=document.getElementById('q'),res=document.getElementById('qres');
+if(!box)return;var idx=window.__POSTS||[];
+function show(){res.style.display='block';box.setAttribute('aria-expanded','true');}
+function hide(){res.style.display='none';box.setAttribute('aria-expanded','false');}
+function go(){var s=box.value.trim().toLowerCase();
+if(s.length<2){hide();return;}
+var hits=idx.filter(function(p){return (p.t+' '+p.d+' '+(p.c||'')).toLowerCase().indexOf(s)>-1;}).slice(0,6);
+if(!hits.length){res.innerHTML='<a><small>No results</small></a>';show();return;}
+res.innerHTML=hits.map(function(p){return '<a href="'+p.u+'">'+p.t+'<small>'+p.c+' · '+p.r+'</small></a>';}).join('');
+show();}
+box.addEventListener('input',go);box.addEventListener('focus',go);
+box.addEventListener('keydown',function(e){if(e.key==='Escape'){hide();box.blur();}});
+document.addEventListener('click',function(e){if(!res.contains(e.target)&&e.target!==box)hide();});})();</script><script>
+(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t)document.documentElement.setAttribute('data-theme',t);
+var MOON="<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z\"/></svg>",SUN="<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4\"/></svg>";
+function paint(){var b=document.getElementById('themebtn');if(!b)return;
+var dark=document.documentElement.getAttribute('data-theme')==='dark';
+b.innerHTML=dark?SUN:MOON;
+b.setAttribute('aria-pressed',dark?'true':'false');
+b.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');}
+paint();
+window.__toggleTheme=function(){var el=document.documentElement;
+var next=el.getAttribute('data-theme')==='dark'?'light':'dark';
+if(next==='light')el.removeAttribute('data-theme');else el.setAttribute('data-theme',next);
+try{localStorage.setItem('synthseo-theme',next);}catch(e){}
+paint();};})();</script><script>(function(){window.__toggleNav=function(){var n=document.getElementById('topnav');if(!n)return;
+var open=n.classList.toggle('open');var b=n.querySelector('.ham');
+if(b){b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Close menu':'Open menu');b.textContent=open?'✕':'☰';}};
+var t=document.querySelector('details.toc-card');if(t&&window.innerWidth<769)t.removeAttribute('open');})();</script><script>(function(){window.__subscribe=function(f){f.style.display='none';var ok=f.nextElementSibling;ok.style.display='block';try{ok.focus();}catch(e){}return false;};})();</script></body></html>

@@ -1,0 +1,813 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Keyword Research: The 1st Step To Successful Search Engine Optimisation</title><meta name="description" content="Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand your users."><link rel="canonical" href="https://synthseo.online/keyword-research/keyword-research-first-step/"><meta property="og:title" content="Keyword Research: The 1st Step To Successful Search Engine Optimisation"><meta property="og:description" content="Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand your users."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><script>(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</script><style>
+:root{--bg:#fff;--ink:#0d0d0d;--muted:#5f6368;--brand:#FF904C;--brand-ink:#B45309;--brand-deep:#4A5BE0;--btn:#4A5BE0;
+--card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.09);--code:#f4f5f6;
+--sh:0 1px 2px rgba(13,13,13,.04),0 12px 32px rgba(13,13,13,.07);--r:16px;--max:1120px}
+[data-theme=dark]{--bg:#0d0d0d;--ink:#f1f4f2;--muted:#9aa3ab;--brand:#FF904C;--brand-ink:#FFB27A;--brand-deep:#8DA2FF;--btn:#4A5BE0;
+--card:#141617;--bd:rgba(255,255,255,.07);--bd2:rgba(255,255,255,.12);--code:#17191b;
+--sh:0 1px 2px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.75 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-deep);text-decoration:none}a:hover{text-decoration:underline}
+h1,h2,h3{letter-spacing:-.025em;line-height:1.2}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--bg);
+border-bottom:1px solid var(--bd)}
+.nav{max-width:var(--max);margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:26px}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.02em;color:var(--brand-ink);margin-right:auto}
+.brand i{font-style:normal;color:var(--brand-deep)}
+.nav a.nl{color:var(--muted);font-weight:500;font-size:15px}.nav a.nl:hover{color:var(--ink);text-decoration:none}
+.btn{display:inline-block;background:var(--btn);color:#fff!important;font-weight:600;font-size:15px;
+padding:10px 24px;border-radius:9999px;border:0;cursor:pointer;letter-spacing:-.01em}
+.btn:hover{filter:brightness(1.1);text-decoration:none}
+.iconbtn{background:var(--code);border:1px solid var(--bd2);border-radius:9999px;width:44px;height:44px;flex:none;
+cursor:pointer;font-size:16px;line-height:1;color:var(--ink)}
+.searchbox{position:relative}
+.searchbox input{background:var(--code);border:1px solid var(--bd2);border-radius:9999px;color:var(--ink);
+padding:9px 18px;font:14px Inter,system-ui,sans-serif;width:210px;outline:none}
+.searchbox input:focus{border-color:var(--brand)}
+.searchres{position:absolute;top:46px;right:0;width:320px;background:var(--card);border:1px solid var(--bd2);
+border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:none}
+.searchres a{display:block;padding:12px 18px;color:var(--ink)}.searchres a:hover{background:var(--code);text-decoration:none}
+.searchres small{color:var(--muted);display:block;font-size:12px}
+/* hero */
+.hero{padding:64px 0 8px;text-align:left}
+.hero.slim{padding:48px 0 4px}
+.eyebrow{display:block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--muted);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5vw,54px);margin:0 0 16px;letter-spacing:-.035em}
+.hero p{color:var(--muted);font-size:19px;max-width:640px;margin:0 0 20px}
+.readmore{font-weight:600;font-size:16px}
+/* editorial list (Explore): one featured post + compact secondary rows */
+.feat-post{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
+padding:36px 0 40px;border-bottom:1px solid var(--bd2)}
+.feat-post h2{font-size:clamp(26px,3.6vw,38px);margin:10px 0 12px;letter-spacing:-.03em}
+.feat-post h2 a{color:var(--ink)}
+.feat-post p{color:var(--muted);font-size:17px;margin:0 0 12px;max-width:56ch}
+.feat-post img{width:100%;border-radius:var(--r)}
+.rows{padding:8px 0 64px}
+.rows-head{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--muted);margin:0;padding:28px 0 4px}
+.row{padding:22px 0;border-bottom:1px solid var(--bd)}
+.row h2{font-size:20px;margin:4px 0 6px}.row h2 a{color:var(--ink)}
+.row p{color:var(--muted);font-size:15px;margin:0 0 8px;max-width:70ch}
+.cat{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+color:var(--brand-ink);margin-bottom:8px}
+.meta{font-size:13px;color:var(--muted)}
+/* post */
+.post-layout{display:block;max-width:840px;padding:48px 0 24px}
+article.post h1{font-size:clamp(28px,4vw,42px);margin:8px 0 12px;letter-spacing:-.03em}
+article.post img{max-width:100%;height:auto;border-radius:12px}
+.feat{width:100%;max-height:400px;object-fit:cover;border-radius:var(--r);margin:20px 0 8px}
+.prose{font-size:17px;overflow-wrap:break-word;word-wrap:break-word}.prose h2{font-size:26px;margin:44px 0 12px}.prose h3{font-size:20px;margin:32px 0 8px}
+.prose pre{background:var(--code);padding:18px 22px;border-radius:12px;overflow:auto;font-size:14px}
+.prose code{background:var(--code);padding:2px 7px;border-radius:6px;font-size:.9em}
+.prose blockquote{border-left:3px solid var(--brand);margin:24px 0;padding:4px 0 4px 20px;color:var(--muted)}
+.toc-card{margin:26px 0 6px;border:1px solid var(--bd2);border-radius:var(--r);background:var(--card);box-shadow:var(--sh);padding:16px 22px;font-size:15px}
+.toc-card summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:10px;list-style:none;font-weight:700}
+.toc-card summary::-webkit-details-marker{display:none}
+.toc-card summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;flex:none;border-radius:8px;background:color-mix(in srgb,var(--brand) 16%,transparent);color:var(--brand-ink);font-weight:800}
+.toc-card[open] summary::before{content:"–"}
+.toc-card .toc-k{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.toc-card ul{list-style:none;margin:12px 0 4px;padding:14px 0 0;border-top:1px solid var(--bd)}
+.toc-card li{margin:8px 0;line-height:1.5}
+.toc-card li.toc-h3{padding-left:16px}
+.toc-card a{color:var(--muted)}
+.toc-card a:hover{color:var(--brand-deep)}
+/* subscribe */
+.cta{border:1px solid var(--bd);border-radius:20px;box-shadow:var(--sh);padding:40px 36px;text-align:left;
+margin:24px 0 72px;background:var(--card)}
+.cta h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 10px;letter-spacing:-.03em}
+.cta p{color:var(--muted);margin:0 0 24px}
+.cta form{display:flex;gap:10px;justify-content:flex-start;flex-wrap:wrap}
+.cta input[type=email]{border:1px solid var(--bd2);border-radius:9999px;padding:12px 22px;font-size:15px;
+width:min(320px,100%);background:var(--bg);color:var(--ink);outline:none}
+.cta input[type=email]:focus{border-color:var(--brand)}
+.cta .ok{display:none;color:var(--brand-deep);font-weight:600}
+footer{border-top:1px solid var(--bd);padding:36px 0 48px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+footer .sp{margin-left:auto;display:flex;gap:18px}
+@media(max-width:640px){.searchbox input{width:140px}.nav{gap:14px;padding:12px 16px}.wrap{padding:0 20px}.hero{padding:56px 0 16px}}
+/* mobile: hamburger nav, single column, fluid media + type, 44px tap targets */
+.ham{display:none;background:var(--code);border:1px solid var(--bd2);border-radius:10px;min-width:44px;min-height:44px;font-size:18px;line-height:1;color:var(--ink);cursor:pointer}
+img{max-width:100%;height:auto}
+.prose table{display:block;max-width:100%;overflow-x:auto}
+.prose pre{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.prose img{max-width:100%;height:auto}
+body{font-size:clamp(15px,.4vw + 14px,17px)}
+@media(max-width:768px){
+.nav{flex-wrap:wrap;gap:10px;padding:12px 16px}
+.ham{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;order:2}
+#themebtn{order:3}
+.nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
+.nav .searchbox{display:none;width:100%;order:4}
+.nav .searchbox input{width:100%}
+.nav.open a.nl,.nav.open .searchbox{display:block}
+.feat-post{grid-template-columns:1fr;gap:20px;padding:28px 0 32px}
+.hero{padding:56px 0 16px}
+.hero h1{font-size:clamp(30px,8vw,42px)}
+.hero p{font-size:clamp(16px,4.5vw,19px)}
+article.post h1{font-size:clamp(26px,7vw,34px)}
+.prose{font-size:clamp(16px,4.4vw,17px)}
+.prose h2{font-size:clamp(22px,5.6vw,26px)}
+.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.cta{padding:40px 20px}
+.wrap{padding:0 20px}
+}
+/* a11y: skip link, visible focus, TOC depth, reduced motion */
+.skip{position:absolute;left:16px;top:-72px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px;color:var(--bg);text-decoration:none}
+.vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--brand-deep);outline-offset:2px}
+.toc-card li.toc-h4{padding-left:32px}
+.prose a{overflow-wrap:break-word}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="post-layout"><article class="post"><span class="cat">keyword-research</span><h1>Keyword Research: The 1st Step To Successful Search Engine Optimisation</h1><div class="meta">2024-02-23 · 25 min read · keyword-research</div><img class="feat" src="/uploads/2026/07/1.png" alt="Keyword Research: The 1st Step To Successful Search Engine Optimisation" onerror="this.style.display='none'"><details class="toc-card" open><summary><span class="toc-k">On this page</span></summary><ul><li class="toc-h2"><a href="#keyword-research-seo-and-digital-marketing">Keyword research, SEO and digital marketing</a></li><li class="toc-h2"><a href="#what-is-a-keyword">What is a keyword?</a></li><li class="toc-h2"><a href="#what-is-keyword-research-in-digital-marketing">What is keyword research in digital marketing?</a></li><li class="toc-h2"><a href="#why-is-keyword-research-important">Why is keyword research important?</a></li><li class="toc-h3"><a href="#1-discover-what-users-are-searching">#1: Discover what users are searching</a></li><li class="toc-h3"><a href="#2-collect-low-competitive-keywords-to-gain-an-edge-over-comp">#2: Collect low-competitive keywords to gain an edge over competitors</a></li><li class="toc-h3"><a href="#3-identify-the-intent-of-the-searchers">#3: Identify the intent of the searchers</a></li><li class="toc-h3"><a href="#4-create-relevant-content">#4: Create relevant content</a></li><li class="toc-h3"><a href="#5-enrich-your-content">#5: Enrich your content</a></li><li class="toc-h2"><a href="#advantages-of-keyword-research">Advantages of keyword research</a></li><li class="toc-h2"><a href="#types-of-keywords">Types of keywords</a></li><li class="toc-h3"><a href="#long-tail-keywords">Long-tail keywords</a></li><li class="toc-h3"><a href="#medium-tail-keywords">Medium-tail keywords</a></li><li class="toc-h3"><a href="#short-tail-keywords">Short-tail keywords</a></li><li class="toc-h2"><a href="#keyword-and-search-intent">Keyword and search intent</a></li><li class="toc-h3"><a href="#what-is-a-marketing-funnel-and-why-it-is-important">What is a marketing funnel and why it is important?</a></li><li class="toc-h3"><a href="#types-of-search-intent-keywords">Types of search intent keywords</a></li><li class="toc-h3"><a href="#informational-intent-keywords">Informational intent keywords</a></li><li class="toc-h3"><a href="#navigational-intent-keywords">Navigational intent keywords</a></li><li class="toc-h3"><a href="#commercial-intent-keywords">Commercial intent keywords</a></li><li class="toc-h3"><a href="#transactional-intent-keywords">Transactional intent keywords</a></li><li class="toc-h2"><a href="#how-to-place-keywords-into-your-content">How to place keywords into your content?</a></li><li class="toc-h2"><a href="#role-of-keyword-research-in-search-engine-optimisation-and-d">Role of keyword research in Search Engine Optimisation and digital marketing</a></li><li class="toc-h2"><a href="#keyword-research-tools-that-work-out-of-the-box">Keyword research tools that work out of the box</a></li><li class="toc-h3"><a href="#semrush">SEMrush</a></li><li class="toc-h3"><a href="#ahrefs">Ahrefs</a></li><li class="toc-h3"><a href="#moz-keywords-explorer">Moz Keywords Explorer</a></li><li class="toc-h3"><a href="#google-trends">Google Trends</a></li><li class="toc-h3"><a href="#ubersuggest">Ubersuggest</a></li><li class="toc-h2"><a href="#metrics-to-look-for-in-a-keyword">Metrics to look for in a keyword</a></li><li class="toc-h2"><a href="#conclusion">Conclusion</a></li></ul></details><div class="prose">
+<h2 class="wp-block-heading" id="keyword-research-seo-and-digital-marketing">Keyword research, SEO and digital marketing</h2>
+
+<p><strong>Keyword research</strong> is the central feature in <a href="/category/general-seo/" target="_blank" rel="noreferrer noopener"><strong>Search Engine Optimisation</strong></a>. And it is often overlooked. Neglecting keyword research can be harmful, especially when the content is being optimised to rank on the first page of the <strong>SERP (Search Engine Results Page)</strong>.</p>
+
+<p>Google itself records <a href="https://www.demandsage.com/google-search-statistics/" target="_blank" rel="noreferrer noopener"><strong>8.5 billion searches</strong></a> every day. That’s <strong>99,000 searches</strong> every second. So, using any keyword or keywords that are even a bit relevant to your niche will draw zero traffic to your site or page.</p>
+
+<p>There’s an ocean of keywords out there. You need to filter out the ones that are useful for you. Thus, you need to conduct extensive keyword research to unearth valuable keywords.</p>
+
+<p>The following blog will help you understand the basics of keyword research, its types, how to perform it and much more.</p>
+
+<h2 class="wp-block-heading" id="what-is-a-keyword"><strong>What is a keyword?</strong></h2>
+
+<p>A keyword is a word or a <strong>group of words</strong> i.e., <strong>phrases</strong> that a user enters in the search engine to find some information or buy an item. It is a term around which a webpage is focused to rank higher on the search engines.</p>
+
+<p>Here we have the example of Shadab from Kolkata.</p>
+
+<p>He wants to buy a chair from nearby stores in his city. So, Shadab navigates to a search engine like Google and enters, “<strong>Nearest furniture store in my location</strong>”.</p>
+
+<p>Here “Nearest furniture store in my location” is the keyword.</p>
+
+<p class="has-palette-color-4-color has-text-color has-link-color">In simple terms, <a href="https://www.semrush.com/blog/keyword-phrases/" target="_blank" rel="noreferrer noopener"><strong>keywords</strong></a> help the users or searchers land their online destination.</p>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Use keywords that define your business to have search engines fetch you the most relevant results.</p>
+</blockquote>
+
+<h2 class="wp-block-heading" id="what-is-keyword-research-in-digital-marketing"><strong>What is keyword research in digital marketing?</strong></h2>
+
+<p>Keyword research is the practice of <strong>discovering keywords</strong> your users search for. In other words, keyword research helps you understand your users or buyers, what they are searching on the internet and why they are online.</p>
+
+<p>Good keyword research offers deeper insight into a topic. It also covers different topics and sub-topics thereby offering readers a complete context.</p>
+
+<p>While researching for keywords you need to be choosy. As through keyword research, you understand the psychology of your target audience.</p>
+
+<blockquote class="wp-block-quote">
+<p><strong>Note:</strong> Making decisions to understand the intent behind the user's query is good practice for creating organic content. </p>
+</blockquote>
+
+<h2 class="wp-block-heading" id="why-is-keyword-research-important"><strong>Why is keyword research important?</strong></h2>
+
+<p>Keyword research is the core of an impactful SEO (Search Engine Optimisation) strategy or/and your PPC (Pay Per Click) strategy. Without keyword research, your <strong>strategy is soulless</strong>. Healthy keyword research also helps you <strong>satisfy the search intent</strong> of the users.</p>
+
+<p>Researching keywords helps you design impactful content. It also helps you in connecting with your readers by answering their questions.</p>
+
+<p><strong>Digital marketing</strong> is a diverse domain, there’s a lot to do in it. That’s a major reason why keyword research is offered less attention. However, understanding the importance of keyword research helps in reviving your Search Engine Optimisation tactics.</p>
+
+<p>The following are some of the major reasons that define the importance of keyword research.</p>
+
+<ol>
+<li style="line-height:2">Discover what users are searching</li>
+
+<li style="line-height:2">Collect low-competitive keywords to gain an edge over competitors</li>
+
+<li style="line-height:2">Identify the intent of the searchers</li>
+
+<li style="line-height:2">Create relevant content</li>
+
+<li style="line-height:2">Enrich your content</li>
+</ol>
+
+<p>Let us understand how each reason justifies the significance of researching keywords.</p>
+
+<h3 class="wp-block-heading" id="1-discover-what-users-are-searching">#1: Discover what users are searching</h3>
+
+<p>There are almost <strong><a href="https://www.demandsage.com/internet-user-statistics/#:~:text=There are over 5.3 billion,has access to the Internet." target="_blank" rel="noreferrer noopener">5 billion users</a> </strong>on the internet which is <strong>65% of the total population</strong> of the whole world.</p>
+
+<p>Hence, finding a potential audience for yourself is very challenging as more and more devices are connecting to the internet everyday increasing the number of users. This is also because each one of us uses the internet for different purposes.</p>
+
+<p>Some of us use internet for educational purposes, while some utilise it for shopping.</p>
+
+<p>Through keyword research, you <strong>narrow down your vision</strong>. And then you focus on a user base which is responsive to your content.</p>
+
+<p>When users enter specific keywords, they are delivered content that meets their queries. By including those keywords in your content, you are more likely to be answering their queries.</p>
+
+<h3 class="wp-block-heading" id="2-collect-low-competitive-keywords-to-gain-an-edge-over-comp">#2: Collect low-competitive keywords to gain an edge over competitors</h3>
+
+<p>If you want your content to be on the first  page of the SERPs or at least on the top 10 pages. You need to collect keywords that are <a href="https://www.seoptimer.com/blog/why-is-keyword-research-important/" target="_blank" rel="noreferrer noopener"><strong>low in competition</strong></a>. To do so, you need to perform keyword research.</p>
+
+<p>Having a pool of low-competitive keywords can also help you rank above your competitors.</p>
+
+<p>There are plenty of tools out there that can filter out low-competitive keywords for you. </p>
+
+<p>We will cover that soon.</p>
+
+<h3 class="wp-block-heading" id="3-identify-the-intent-of-the-searchers">#3: Identify the intent of the searchers</h3>
+
+<p>Having a lot of traffic on your website, webpage or post is not enough. You need to look behind the curtains. </p>
+
+<p>Understanding the intention of keywords is crucial in keyword research.</p>
+
+<p><strong>Search intent</strong> is the reason behind a keyword being put in search engines. It defines what the user is looking for. </p>
+
+<p>It varies from individual to individual and thus it is another component of keyword research which is difficult to master.</p>
+
+<p>But, thanks to tools like <a href="https://www.semrush.com/analytics/keywordoverview/?db=in&amp;currency=inr" target="_blank" rel="noreferrer noopener"><strong>SEMrush's Keyword Overview Tool</strong></a> which help you understand the intent of the keyword.</p>
+
+<h3 class="wp-block-heading" id="4-create-relevant-content">#4: Create relevant content</h3>
+
+<p>Digital marketing, particularly SEO is all about the <a href="https://ahrefs.com/blog/eat-seo/#:~:text=E%2DA%2DT%2D%20stands%20for%20expertise%2C%20authoritativeness,quality%20of%20Google's%20search%20results." target="_blank" rel="noreferrer noopener"><strong>E-A-T principle</strong></a>. E-A-T stands for Expertise, Authority and Trustworthiness. But, I believe “<strong>Relevance</strong>” is equally important.</p>
+
+<p>Balancing relevance and quality is rare. Even if you create a <strong>quality piece of content</strong> yet it is not relevant to the searcher’s query all is futile. You won’t be having traffic to your page.</p>
+
+<p>So, how do you create content which is relevant to your audience? you put effort into good keyword research. Find keywords that are relevant to your subject. Include them in your content <strong>organically</strong> (meaning naturally). And watch those numbers grow exponentially.</p>
+
+<h3 class="wp-block-heading" id="5-enrich-your-content">#5: Enrich your content</h3>
+
+<p>Including or placing <strong>valuable keywords</strong> into your content can enrich it. If you focus on a single keyword, then the content you produce will be <strong>monotonous to your audience</strong>. You need to preserve the interest of your readers.</p>
+
+<p>Add different keywords, use creative ones as well and define them. This will allow you to write with an appealing tone and help your audience understand your words.</p>
+
+<h2 class="wp-block-heading" id="advantages-of-keyword-research">Advantages of keyword research</h2>
+
+<p>We have already covered the importance of keyword research for your digital marketing, <strong>SEO (organic) and PPC (paid)</strong> campaigns. Still, benefits are abundant for researching keywords and incorporating them into your content.</p>
+
+<p>Some of the key advantages are as follows:</p>
+
+<ol>
+<li style="line-height:2">Content planning.</li>
+
+<li style="line-height:2">Enhanced visibility on the SERPs.</li>
+
+<li style="line-height:2">Adaptability to new trends.</li>
+
+<li style="line-height:2">Discovering new markets.</li>
+
+<li style="line-height:2">Enhance organic traffic and rankings.</li>
+
+<li style="line-height:2">Attracting the right audience.</li>
+
+<li style="line-height:2">Discovering new opportunities to rank.</li>
+
+<li style="line-height:2">Better user/reader experience.</li>
+
+<li style="line-height:2">SEO-optimised content.</li>
+
+<li style="line-height:2">And much more.</li>
+</ol>
+
+<h2 class="wp-block-heading" id="types-of-keywords">Types of keywords</h2>
+
+<p>Even though the type of keyword varies a lot based on use cases. Still, keywords are majorly divided into <strong>three different classes</strong>.</p>
+
+<p><strong>Long-tail, medium-tail and short-tail keywords</strong> are the three major kinds of keywords. Having keywords in your content covering all the three categories is a good practice when it comes to researching keywords.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/types_of_keywords.png" alt="types_of_keywords" class="wp-image-4546" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 1: Types of keywords</strong></p>
+
+<p>The below table mentions the volume, length and difficulty of each group of keywords.</p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table class="has-palette-color-7-background-color has-background has-fixed-layout" style="border-style:none;border-width:0px"><thead><tr><th class="has-text-align-left" data-align="left"><strong>Metric</strong></th><th><strong>Long-tail</strong></th><th class="has-text-align-left" data-align="left"><strong>Medium-tail</strong></th><th class="has-text-align-left" data-align="left"><strong>Short-tail</strong></th></tr></thead><tbody><tr><td class="has-text-align-left" data-align="left">Volume</td><td>Low</td><td class="has-text-align-left" data-align="left">Average</td><td class="has-text-align-left" data-align="left">High</td></tr><tr><td class="has-text-align-left" data-align="left">Length</td><td>3-5 words</td><td class="has-text-align-left" data-align="left">2-3 words</td><td class="has-text-align-left" data-align="left">1-2 words</td></tr><tr><td class="has-text-align-left" data-align="left">Difficulty</td><td>Moderately easy</td><td class="has-text-align-left" data-align="left">Moderate</td><td class="has-text-align-left" data-align="left">Highest</td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table 1: Types of keywords</strong></figcaption></figure>
+
+<h3 class="wp-block-heading" id="long-tail-keywords">Long-tail keywords</h3>
+
+<p>By now, you would have understood a bit about long-tail keywords.</p>
+
+<p>Long-tail keywords range from <strong>3 words to 5 words</strong> and are moderately <strong>easy to rank for</strong>. But, due to their <strong>low volume</strong>, they are less impactful as compared to other forms of keywords.</p>
+
+<p>Thus, using too many long-tail keywords can’t bring readers to your blog/page or customers to your e-commerce store.</p>
+
+<p><strong>Example:</strong></p>
+
+<ul>
+<li style="line-height:2">“buy the best pizza near me”</li>
+
+<li style="line-height:2">“what is search engine optimisation?”</li>
+
+<li style="line-height:2">“bikes that go 200 mph”</li>
+</ul>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Combine your short and medium tailed keywords to have useful long-tailed keywords.</p>
+</blockquote>
+
+<h3 class="wp-block-heading" id="medium-tail-keywords">Medium-tail keywords</h3>
+
+<p>Medium-tail keywords are also called “chunky keywords”. They have <strong>2 to 3 words</strong> in general, with an <strong>average amount of volume</strong> and moderate <strong>difficulty to rank for</strong>.</p>
+
+<p>Medium-tail keywords are the most targeted ones. Because they have a balance <strong>between volume and difficulty</strong>, the chances of ranking higher using medium-tailed keywords are more.</p>
+
+<p>These keywords are like secret ingredients to your recipe. However, a ratio must be maintained when choosing keywords from the different categories.</p>
+
+<p><strong>Example:</strong> “</p>
+
+<ul>
+<li style="line-height:2">“manchester city shirt”</li>
+
+<li style="line-height:2">“organic cat food”</li>
+
+<li style="line-height:2">“kid’s toys”</li>
+</ul>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Begin your keyword research with medium-tailed keywords as they are more specific than short-tail keywords and easy to rank for.</p>
+</blockquote>
+
+<h3 class="wp-block-heading" id="short-tail-keywords">Short-tail keywords</h3>
+
+<p>Short-tail keywords are sometimes referred to as “<strong>fat head keywords</strong>”. They are <strong>most competitive</strong>. Generally, they are <strong>1 word to 2 words</strong> due to their extremely precise nature. They are narrowed down to a thing or two. </p>
+
+<p>Due to the high amount of competition, they have a <strong>high volume</strong> as well.</p>
+
+<p>But, don’t be discouraged because of competition and volume. As short-tail keywords are the building blocks of your content.</p>
+
+<p>Imagine yourself writing for the keyword “<a href="/blogging/blogging-tips-for-beginners" target="_blank" rel="noreferrer noopener"><strong>blogging tips</strong></a>”. If you neglect the keyword at all, then you will lose relevance to your content and ultimately no ranking.</p>
+
+<p>Use “blogging tips” inside medium-tailed and long-tailed keywords. For example, “5 proven blogging tips for 2024” being a long-tailed keyword also has the short-tailed included in it.</p>
+
+<p><strong>Example:</strong></p>
+
+<ul>
+<li style="line-height:2">“coffee”</li>
+
+<li style="line-height:2">“gold jewellery”</li>
+
+<li style="line-height:2">“trending clothes”</li>
+</ul>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Include short-tailed keywords into your content, then connect them with medium-tailed ones and then add long-tailed keywords to complete your sentence.</p>
+</blockquote>
+
+<h2 class="wp-block-heading" id="keyword-and-search-intent"><strong>Keyword and search intent</strong></h2>
+
+<p>Before we jump into discussing keyword and search intent, it is important to understand the concept of Marketing Funnel as it helps in grasping the concept and importance of intent in keyword research with ease.</p>
+
+<p>Keywords, search intent and marketing funnel are intertwined with each other. Their inter-relation has aided marketers in meeting the specific needs of the users and consumers.</p>
+
+<h3 class="wp-block-heading" id="what-is-a-marketing-funnel-and-why-it-is-important">What is a marketing funnel and why it is important?</h3>
+
+<p>A <strong>Marketing Funnel</strong> (also called a buyer decision funnel) is a framework that defines the <strong>journey of a customer</strong>. It helps marketers understand the different phases consumers go through before making a purchase.</p>
+
+<p>Marketing Funnel also offers you the ability to understand the <strong>attitude of the customers</strong>, and their <strong>psychological states</strong> before a purchase. It represents the stages people go through after they know a product or service.</p>
+
+<p>The following image defines the four segments of the Marketing Funnel.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/marketing_funnel-.png" alt="marketing_funnel" class="wp-image-4547" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 2: Fundamentals of the concept of Marketing Funnel</strong></p>
+
+<p>Even the image above clearly defines the various segments of <strong>Marketing Funnel</strong>. There are a lot of things that need to be understood to utilise the framework efficiently.</p>
+
+<p>The framework includes four phases a person goes through before purchasing. These are <strong>Awareness, Interest, Desire and Action</strong> is simply <strong>AIDA</strong>. </p>
+
+<p>Let us understand how each one of them contributes to the Marketing Funnel.</p>
+
+<ul>
+<li style="line-height:1.7"><strong>Awareness:</strong> This is the first stage of the funnel. Here, your target audience becomes aware of your brand or your product. You extensively use marketing strategies and campaigns to let your users know you and your offerings.</li>
+
+<li style="line-height:1.7"><strong>Interest:</strong> The second phase is when your potential customer becomes interested in your business. To make people interested in your products and services, you need to offer them commodities that are relevant to them.</li>
+
+<li style="line-height:1.7"><strong>Desire:</strong> Now the customers are interested in your business. As a result of the understanding of what you sell and who you are. They are more likely to have a desire to try stuff. But, you can speed up the process by offering them discounts and offers. This can help them take action quickly.</li>
+
+<li style="line-height:1.7"><strong>Action:</strong> The potential users are now your customers. Here, they take action. For you, it can be a checkout or a product being added to a cart while for others it can be signing up,  for a newsletter or checking out a new article or page. Or it can also be referring to your website or product friends and families.</li>
+</ul>
+
+<h3 class="wp-block-heading" id="types-of-search-intent-keywords">Types of search intent keywords</h3>
+
+<p>Apart from being categorised based on length, volume and difficulty, keywords are also classified on search intent (reason behind the search). There are <strong>four major forms</strong> of search intent and thus keywords are categorised under the same.</p>
+
+<p>These include <strong>Navigational, Commercial, Informational and Transactional</strong>.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/keywords_search_intent.png" alt="key_search_intent" class="wp-image-4548" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 3: Keyword search and intent</strong></p>
+
+<h3 class="wp-block-heading" id="informational-intent-keywords">Informational intent keywords</h3>
+
+<p>A study conducted by Search Engine Land has showcased that there are around <a href="https://www.notion.so/Keyword-research-The-first-step-to-successful-Search-Engine-Optimisation-d72d5a51e6df48f38af29eb6937ed79f?pvs=21" target="_blank" rel="noreferrer noopener"><strong>80% of the searches</strong></a> on the internet are informational.</p>
+
+<p>People use search engines every day to find information. Because the internet is filled with <strong>useful information</strong>.</p>
+
+<p>Informational intent keywords are the most used ones. The intent behind informational intent keywords is to find answers.</p>
+
+<p>These keywords are often associated with the <strong>first phase</strong> of the Marketing Funnel i.e., <strong>awareness</strong>. As the users are aware of your offerings they are more likely to find more information about your brand.</p>
+
+<p><strong>Some examples:</strong></p>
+
+<ul>
+<li style="line-height:2">“what is the distance between the Sun and the Moon?”</li>
+
+<li style="line-height:2">“how do I live a healthy life?”</li>
+
+<li style="line-height:2">“what is the capital of Qatar?”</li>
+</ul>
+
+<h3 class="wp-block-heading" id="navigational-intent-keywords">Navigational intent keywords</h3>
+
+<p><a href="https://www.semrush.com/blog/types-of-keywords-commercial-informational-navigational-transactional/#2--navigational" target="_blank" rel="noreferrer noopener"><strong>Navigational intent keywords</strong></a> are the ones entered into search engines to <strong>navigate a specific website</strong> or webpage. Such users are <strong>already aware</strong> of the brand or product.</p>
+
+<p>Searching for a brand name or a famous product indicates a navigational search. These keywords are also used to find the real-life location of a place.</p>
+
+<p>Users navigate to specific pages of your website to look for more information about you because they are interested. Hence, these keywords fall into the <strong>second phase</strong> of the Marketing Funnel, which is <strong>interest</strong>.</p>
+
+<p><strong>Some examples:</strong></p>
+
+<ul>
+<li style="line-height:2">“amazon”</li>
+
+<li style="line-height:2">“twitter”</li>
+
+<li style="line-height:2">“nearest Burger King’s outlet in London”</li>
+</ul>
+
+<h3 class="wp-block-heading" id="commercial-intent-keywords">Commercial intent keywords</h3>
+
+<p>People use these keywords when they want to explore or <strong>investigate a brand</strong>, product or service. <strong><a href="https://www.wordstream.com/blog/ws/2014/06/30/commercial-intent-keywords">Commercial intent keywords</a></strong> are often used to look for <strong>reviews</strong>, and ratings, distinguish or <strong>compare</strong> and much more.</p>
+
+<p>Such keywords are useful to assess the <strong>real intent of a user</strong>, whether they are about to make a purchase shortly or not. So, using them can help you reach potential buyers.</p>
+
+<p><strong>Some examples:</strong></p>
+
+<ul>
+<li style="line-height:2">“free books</li>
+
+<li style="line-height:2">“best Android phone in 2024”</li>
+
+<li style="line-height:2">“electric vehicle vs fuel vehicle”</li>
+</ul>
+
+<h3 class="wp-block-heading" id="transactional-intent-keywords">Transactional intent keywords</h3>
+
+<p>Transactional intent keywords lie at the bottom of the Marketing Funnel.</p>
+
+<p>Here, the users are converted into customers as they <strong>take action</strong>. Also, these keywords express that the individual is ready to buy or make a transaction (not just monetary).</p>
+
+<p>Finding valuable and useful transactional intent keywords and placing them into your content body as a <strong>CTA (Call-To-Action)</strong>. These keywords help you confirm that the user wants to become a customer.</p>
+
+<p><strong>Some examples:</strong></p>
+
+<ul>
+<li style="line-height:2">“buy iPhone 15 Plus”</li>
+
+<li style="line-height:2">“order pizza”</li>
+
+<li style="line-height:2">“subscribe to MKBHD on YouTube”</li>
+</ul>
+
+<p>Now you understand what search intents are and how keywords are categorised. Let us compare each one of them</p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table class="has-palette-color-7-background-color has-background" style="border-style:none;border-width:0px"><thead><tr><th class="has-text-align-left" data-align="left">Keyword</th><th class="has-text-align-left" data-align="left">Intent (searched for)</th></tr></thead><tbody><tr><td class="has-text-align-left" data-align="left">Informational</td><td class="has-text-align-left" data-align="left">To discover answers to questions and queries</td></tr><tr><td class="has-text-align-left" data-align="left">Navigational</td><td class="has-text-align-left" data-align="left">To find a specific website, page, product or service already known to the user.</td></tr><tr><td class="has-text-align-left" data-align="left">Commercial</td><td class="has-text-align-left" data-align="left">To investigate reviews and ratings of a product or a brand</td></tr><tr><td class="has-text-align-left" data-align="left">Transactional</td><td class="has-text-align-left" data-align="left">To buy a product or service</td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table 2: Keyword and search intent</strong></figcaption></figure>
+
+<h2 class="wp-block-heading" id="how-to-place-keywords-into-your-content">How to place keywords into your content?</h2>
+
+<p><strong>Natural placement</strong> of keywords is crucial. And there’s no hard and fast rule for it.</p>
+
+<p>You need to seed the keywords organically and naturally into your content. So that the readers can <strong>scan the text easily</strong>. Nobody wants to read <strong>boring stuff</strong>. Also, none wants to read a text which is difficult to understand.</p>
+
+<p>You are only reading this to this point because I have used <strong>simple language</strong>.</p>
+
+<p>Your blog, article or any piece of writing must be clear, concise and <strong>digestible</strong>. Readers don’t like to re-read lines to understand.</p>
+
+<p>But how do you achieve it?</p>
+
+<ul>
+<li style="line-height:2">Place keywords into your text like you are naturally speaking.</li>
+
+<li style="line-height:2">First, speak and then write.</li>
+
+<li style="line-height:2">Think of yourself as a teacher.</li>
+
+<li style="line-height:2">Be clear in your words.</li>
+
+<li style="line-height:2">Use simple terms and language.</li>
+
+<li style="line-height:2">Let the words flow on their own.</li>
+
+<li style="line-height:2">After finishing, read out your text to understand its tone.</li>
+
+<li style="line-height:2">Ask others for recommendations, advice and suggestions.</li>
+</ul>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro Tip:</strong> Using seed keywords is also important for you to not let the readers become zoned out. Make sure that your target keyword is spread naturally and evenly.</p>
+</blockquote>
+
+<h2 class="wp-block-heading" id="role-of-keyword-research-in-search-engine-optimisation-and-d"><strong>Role of keyword research in Search Engine Optimisation and digital marketing</strong></h2>
+
+<p>Keyword research in Search Engine Optimisation and digital marketing serves as a <strong>backbone</strong>. Keywords included in the content when backed by research and proper decisions show positive results in traffic.</p>
+
+<p>Whether you are <strong>optimising content</strong> for search engines or <strong>running paid ads</strong>, you have to pass through the valley of keyword research. Through keyword research, you target words that can assist you in building a loyal customer base.</p>
+
+<p>This is done by delivering to people on the internet what they are looking for. Simply, keyword research in digital marketing helps in <strong>connect yourself</strong> with opportunities.</p>
+
+<p>Apart from these, keyword research helps you in devising effective content strategies to land at the right places, at the right time with the right information. Some of the key roles played by keyword research are as follows:</p>
+
+<blockquote class="wp-block-quote">
+<p><strong>Fun fact:</strong> “<strong>YouTube</strong>” and “<strong>Amazon</strong>” are the most searched keywords. </p>
+</blockquote>
+
+<h2 class="wp-block-heading" id="keyword-research-tools-that-work-out-of-the-box"><strong>Keyword research tools that work out of the box</strong></h2>
+
+<p>Now you are all aware of what a keyword is, its types and the importance of keyword research. But, how to find invaluable keywords? what tools to use? and what steps to follow?</p>
+
+<p>In this section, we will learn how to perform keyword research using different tools. Let’s go.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/tools_keyword_research.png" alt="keyword_research_tools" class="wp-image-4549" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 4: Different keyword research tools</strong></p>
+
+<p>The internet is packed with SEO and <strong><a href="https://zapier.com/blog/best-keyword-research-tool/" target="_blank" rel="noreferrer noopener">keyword research tools</a></strong>. Some are free, some paid while some are in between the two i.e., free + premium also called <strong>freemium</strong>.</p>
+
+<p>Some of the tools which are prominently used by SEO and marketing professionals include <strong>SEMrush</strong>, <strong>Ahrefs</strong>, <strong>Moz Keywords Explorer</strong>, <strong>Google Trends</strong> and <strong>Ubersuggest.</strong></p>
+
+<h3 class="wp-block-heading" id="semrush"><strong>SEMrush</strong></h3>
+
+<p><a href="/seo/semrush-single-solution-to-all-blogging-problems" target="_blank" rel="noreferrer noopener"><strong>SEMrush</strong></a> is the face of digital marketing. Whether you want to conduct keyword research, analyse your competitor's profile, build external links or perform on-page SEO, SEMrush is there for you.</p>
+
+<p>For free users, SEMrush offers <strong><a href="https://www.semrush.com/pricing/#:~:text=As a free user%2C you,paid plans in this article" target="_blank" rel="noreferrer noopener">10 free keyword research</a></strong>.<strong> </strong>Free users can only manage one project at a time. Also, there are paid plans available as well which range from<strong> <a href="https://www.semrush.com/pricing/#:~:text=As a free user%2C you,paid plans in this article" target="_blank" rel="noreferrer noopener">$130 to $500</a></strong>/month.</p>
+
+<p>Let’s see how you can use SEMrush to find keywords.</p>
+
+<p><strong>Step 1:</strong> Search for the “SEMrush Keyword Overview tool” or visit this <a href="https://www.semrush.com/analytics/keywordoverview/?db=in&amp;currency=inr" target="_blank" rel="noreferrer noopener">link</a>.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/semrush_keyword.png" alt="semrush_keyword_overview" class="wp-image-4550" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 5: SEMrush’s Keyword Overview Page</strong></p>
+
+<p>When you visit the provided link you will see the above page.</p>
+
+<p><strong>Step 2:</strong> Now enter a keyword into the “Keyword Overview” search box, choose the location and then hit the search button.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/semrush_keyword_overview_page.png" alt="keyword_overview" class="wp-image-4551" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 6: Keyword Overview Tool</strong></p>
+
+<p>For example, I have entered the word “best pizza in california” and I have chosen my location as well. The tool is not case-sensitive. Now let’s see what we are gonna have when we press the search button.</p>
+
+<p>Voila! we have some very useful information about the entered keyword. We will discuss how to identify whether the keyword is valuable or not in moments.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/semrush_keyword_results_page.png" alt="semrush_results" class="wp-image-4552" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 7: Results for “best pizza in california” page on SEMrush</strong></p>
+
+<p>So, that’s all about researching keywords on SEMrush. Isn’t it easy?</p>
+
+<p>Repeat the steps to find more keywords, but remember if you are a free user then you are limited to <strong>10 keywords in a day</strong>.</p>
+
+<h3 class="wp-block-heading" id="ahrefs"><strong>Ahrefs</strong></h3>
+
+<p><a href="https://ahrefs.com/" target="_blank" rel="noreferrer noopener"><strong>Ahrefs</strong></a> is another leading SaaS (Software as a Service). Ahrefs also offers a wide array of tools for Search Engine Optimisation and Search Engine Marketing.</p>
+
+<p>Ahrefs also offers both free as well as <a href="https://ahrefs.com/pricing" target="_blank" rel="noreferrer noopener">paid plans</a>. Paid plans start from <strong>$99/month up to $999/month</strong>.</p>
+
+<p>However, the keyword research tool of Ahrefs is its key highlight. Ahrefs offers a keyword generator, keyword difficulty checker, backlink checker, broken link checker and much more. You can even perform keyword research for platforms like Amazon and YouTube.</p>
+
+<p>As of now, let’s focus on the basics.</p>
+
+<p><strong>Step 1:</strong> Search for “<strong>Free SEO tools by Ahrefs</strong>” or use this <a href="https://ahrefs.com/free-seo-tools" target="_blank" rel="noreferrer noopener">link</a>.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/ahrefs_seo_tools.png" alt="ahrefs_tools" class="wp-image-4553" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 8: Ahrefs Free SEO Tools page</strong></p>
+
+<p><strong>Step 2:</strong> Now, on this page, we are gonna do the same. Let’s use the same keyword as before for better understanding.</p>
+
+<p>As we enter “best pizza in california” and smash enter on the keyboard we have the following page:</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/ahrefs_tools_page.png" alt="ahrefs_results" class="wp-image-4554" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 9: Results for “best pizza in california” on Ahrefs</strong></p>
+
+<p>That’s all on Ahrefs, let’s move on to another tool.</p>
+
+<h3 class="wp-block-heading" id="moz-keywords-explorer"><strong>Moz Keywords Explorer</strong></h3>
+
+<p><a href="https://moz.com/explorer" target="_blank" rel="noreferrer noopener"><strong>Moz Keywords Explorer</strong></a> is another cool name in the field of digital marketing. Mom Keywords Explorer has been explicitly used. Because Moz Keyword Explorer has more than 1.25 keywords it can drive traffic easily.</p>
+
+<p>However, you are only limited to 3 keyword searches every day.</p>
+
+<p>Compared with other keyword research tools like SEMrush and Ahrefs, Moz has also similar features. It has tools like domain analysis, competitive research and link explorer. Moz simply offers you a complete arsenal of quality tools.</p>
+
+<p>The price for Moz starts from <a href="https://moz.com/products/pro/pricing" target="_blank" rel="noreferrer noopener"><strong>$99/month up to $599/month</strong></a>. But if you want to purchase an annual package you get a discount of 20%.</p>
+
+<p>Let’s see how can we use it.</p>
+
+<p><strong>Step 1:</strong> Search for Moz Keyword Explorer or visit this <a href="https://moz.com/explorer" target="_blank" rel="noreferrer noopener">link</a>.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/moz_keyword_explorer.png" alt="moz" class="wp-image-4555" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 10: Moz Keywords Explorer page</strong></p>
+
+<p><strong>Step 2:</strong> Enter the keyword, fill in the captcha if it asks for as well as the location and click the “find keywords” button.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/moz_keyword_explorer_results_page.png" alt="moz_keyword_results" class="wp-image-4556" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 11: Results for “best pizza in california” on Moz Keyword Explorer</strong></p>
+
+<p>Scroll down a bit and you will see the above page. To access more information about the keyword you have to sign up.</p>
+
+<h3 class="wp-block-heading" id="google-trends"><strong>Google Trends</strong></h3>
+
+<p>Google Trends is the most basic keyword research tool. For newbies, Google Trends is a platform to learn more about researching keywords.</p>
+
+<p>Google’s keyword tool is free to use. There’s no fee, no hidden charge, subscription or trial duration. You can use it for as many as time you want.</p>
+
+<p>Let’s check how to search for keywords using Google Trends.</p>
+
+<p><strong>Step 1:</strong> Search for “Google Trends” or use the following <a href="https://trends.google.com/trends/?geo=US" target="_blank" rel="noreferrer noopener">link</a>. You will see the following page.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/google_trends_page.png" alt="google_trends" class="wp-image-4557" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 12: Google Trends page</strong></p>
+
+<p>Here, you need to enter the keyword you are searching for. As we haven’t still found the “best pizza in california” we are again going to search for it.</p>
+
+<p><strong>Step 2:</strong> Enter your keyword, and click explore.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/google_trends_results.png" alt="results_google_trends" class="wp-image-4558" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 13: Results for “best pizza in california” on Google Trends</strong></p>
+
+<p>You will notice that the results page for the keyword on Google Trends is a bit different from others. Other showcased volume, difficulty, CPC and other forms of information related to the keyword. But, here you see a graph and some filters.</p>
+
+<p>The graph is very useful. It shows the levels of interest for that keyword. It provides a score for the keyword from 0-100; where 0 means no search for that keyword thus zero interest and 100 expresses that people or searchers are highly interested in that keyword.</p>
+
+<p>You also have a timeline below which shows the score on a particular date or period.</p>
+
+<blockquote class="wp-block-quote">
+<p><strong>Pro tip:</strong> Use filters to narrow down your search. You can see keyword’s performance in particular region, date, categories in which the word has been shown and much more.</p>
+</blockquote>
+
+<h3 class="wp-block-heading" id="ubersuggest"><strong>Ubersuggest</strong></h3>
+
+<p>The final on the list is Ubersuggest. And no, it’s not from Uber (haha).</p>
+
+<p>The credit goes to <strong>Neil Patel</strong>.</p>
+
+<p>Ubersuggest provides you with a complete set of tools for your digital marketing projects. Add your website/project, conduct a site audit, research keywords, estimate traffic on your site, analyse backlinks and do much more.</p>
+
+<p>Neil Patel is a generous guy so you have a <a href="https://app.neilpatel.com/en/pricing?lang=en" target="_blank" rel="noreferrer noopener"><strong>7-day free trial</strong></a> for the tool if you purchase a plan. Ubersuggest is a bit different from other tools mentioned before in terms of pricing. You can either pay monthly or purchase the tool for a lifetime with a one-time purchase.</p>
+
+<p>The monthly plan begins from just <strong>$20/month to $40/month</strong>. For lifetime purchases the price goes from $200 for 2-7 websites up to $400 for 8-15 websites.</p>
+
+<p>Now let’s have a look at it.</p>
+
+<p><strong>Step 1:</strong> Google “Ubersuggest” or visit this <a href="https://app.neilpatel.com/en/pricing?lang=en" target="_blank" rel="noreferrer noopener">link</a>. You will land on the following page.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/ubersuggest_keyword_page.png" alt="" class="wp-image-4559" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 14: Ubersuggest’s page</strong></p>
+
+<p><strong>Step 2:</strong> Enter keywords, language, location and search.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/ubersuggest_keyword_results_page.png" alt="ubersuggest_results" class="wp-image-4560" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 15: Results for “best pizza in california” on Ubersuggest</strong></p>
+
+<p>Here, you will see a lot of useful information for the keyword you searched for. Scroll down to find detailed information such as related keywords, content ideas, backlinks and much more.</p>
+
+<p><strong>TL; DR (Too Long; Didn’t Read)?</strong></p>
+
+<p>The table below summarises the above discussion comprehensively.</p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table class="has-palette-color-7-background-color has-background" style="border-style:none;border-width:0px"><thead><tr><th><strong>Tools</strong></th><th><strong>Features</strong></th><th class="has-text-align-left" data-align="left"><strong>Price</strong></th><th><strong>Best for</strong></th></tr></thead><tbody><tr><td>SEMrush</td><td>Keyword research, competitor analysis, backlink audit, on-page SEO, off-page SEO, technical SEO, and local SEO.</td><td class="has-text-align-left" data-align="left">Free as well as paid ($130 to $500/month)</td><td>Professionals and intermediates.</td></tr><tr><td>Ahrefs</td><td>Keyword generator, keyword difficulty checker, backlink checker, broken link checker, SERP checker, website authority checker and website traffic checker.</td><td class="has-text-align-left" data-align="left">Free as well as paid ($99 up to $999/month)</td><td>Professionals and intermediates.</td></tr><tr><td>Moz </td><td>Domain analysis, competitive research, link explorer, online presence, brand authority.</td><td class="has-text-align-left" data-align="left">Free as well as paid ($99 up to $599/month)</td><td>Professionals and intermediates.</td></tr><tr><td>Google Trends</td><td>Keyword search, keyword filter.</td><td class="has-text-align-left" data-align="left">Free</td><td>Newcomers</td></tr><tr><td>Ubersuggest</td><td>Conduct a site audit, research keywords, estimate traffic on your site, and analyse backlinks.</td><td class="has-text-align-left" data-align="left">Free as well as paid ($20/month to $40/month) and ($200 to $500 for lifetime)</td><td>Professionals, intermediates and newcomers.</td></tr></tbody></table><figcaption class="wp-element-caption"><strong><strong>Table 3: Comparision of keyword research tools</strong></strong></figcaption></figure>
+
+<p>Now you are well-versed in different keyword research tools you can get your hands dirty. To master keyword research you need to be practical. However, there’s one more thing you need to understand to hone the skills of conducting research.</p>
+
+<p>Let’s imagine you have landed on the results page of a keyword research. How do you understand whether the keyword is valuable or not?</p>
+
+<p>You will have the following questions.</p>
+
+<ul>
+<li>Will it be helpful or useful for your content?</li>
+
+<li>Are users searching that keyword?</li>
+
+<li>What is the intent behind it?</li>
+
+<li>Is it easy to rank for this keyword?</li>
+</ul>
+
+<p>You need to understand the metrics or KPIs (Key Performance Indicators) of that keyword. Let’s see how you are going to do that.</p>
+
+<h2 class="wp-block-heading" id="metrics-to-look-for-in-a-keyword">Metrics to look for in a keyword</h2>
+
+<p>Using relevant keywords is important but it is also important to understand how they are going to perform for your post.</p>
+
+<p>There are certain metrics which you need to assess the value of a keyword. Identifying the volume of the keyword, difficulty in ranking for, the intent behind and cost-per-click.</p>
+
+<p>To make things easy to understand. We are going to not take the example of “best pizza in california” (cause everybody knows that Domino’s make the best pizza in California).</p>
+
+<p>Let’s take the example of something much more simpler, “youtube”.</p>
+
+<figure class="wp-block-image aligncenter size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/semrush_youtube_results.png" alt="semrus_keyword_youtube" class="wp-image-4562" style="border-radius:10px"/></figure>
+
+<p class="has-text-align-center" style="font-size:16px"><strong>Figure 16: Results for “youtube” on SEMrush</strong></p>
+
+<p>Here’s the output when I searched for “<strong>youtube</strong>” on SEMrush (yeah it's my favourite of all).</p>
+
+<p>We have a lot of information for the keyword here. Let’s break each one of them.</p>
+
+<p><strong>Volume:</strong> Volume is the total number of times a keyword is searched for. It shows how many times, the keyword is searched for. So, if a keyword has more volume then will it be easy to rank for?</p>
+
+<p>The answer is yes as well as no. Common keywords have tremendous volume. As everybody on the internet is using it. Ranking on the web using such keywords is extremely challenging.</p>
+
+<p>In the above example, we notice that the keyword “youtube” has a volume of 226 million in the US and globally, the it has a whopping 1.3 billion. So, if you try to rank for that keyword, you will surely be lost on the internet. With almost, no traffic at the end of the day.</p>
+
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/volume.png" alt="volume" class="wp-image-4571" style="border-radius:10px;width:156px;height:auto"/></figure>
+
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/global_volume.png" alt="global_search" class="wp-image-4564" style="border-radius:10px;width:346px;height:auto"/></figure>
+
+<p>So what you should be doing? The answer lies in assessing KD (Keyword Difficulty).</p>
+
+<p><strong>Difficulty or competitiveness:</strong> Keyword difficulty indicates how much difficult is to rank on the search engines for that keyword. In simpler terms, if a keyword has a higher KD value then your efforts are probably in ruins (if you only use that particular keyword).</p>
+
+<p>Different tools have different ways of measuring and defining KD value. Some mention it in percent while some are on a scale from 0 to 100. Some even just mention “easy, moderate and hard”.</p>
+
+<p>For the concerned keyword, we notice that the KD value at 100%. So, it is also impossible to rank for (only) this keyword.</p>
+
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/keyword_difficulty.png" alt="keyword_difficulty" class="wp-image-4565" style="border-radius:10px;width:156px;height:auto"/></figure>
+
+<p>Thus, look for keywords that are low in competition or difficulty. While selecting easy keywords make sure that they have volume. There’s no point in using a keyword with 10% difficulty when it has 100 or 200 volume.</p>
+
+<p><strong>Intent:</strong> We have already discussed a lot on intent. To recall, we have four forms of intent.</p>
+
+<ul>
+<li>Informational</li>
+
+<li>Navigational</li>
+
+<li>Commercial</li>
+
+<li>Transactional</li>
+</ul>
+
+<p>Planned implementation or usage of each intentional keyword as per AIDA (Awareness, Interest, Desire, Action) can be extremely helpful in converting users into loyal customers.</p>
+
+<p>Our chosen keyword, “youtube” falls in the category of navigational intent keyword.</p>
+
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/intent.png" alt="search_intent" class="wp-image-4566" style="border-radius:10px;width:206px;height:auto"/></figure>
+
+<p><strong>Cost-Per-Click or CPC:</strong> Finally, CPC is a clear indicator of whether a keyword is valuable or not. Cost-per-click is the amount charged by an advertiser for every click you have on your ad placed on a website.</p>
+
+<p>Let’s say I want to place an ad on a website. My budget is $300. I have accumulated 300 clicks on that advertisement then my CPC is $1.</p>
+
+<p>So for every click, I paid $1 to the advertisers. Thus, when I had 300 clicks I was charged $300.</p>
+
+<p>In our example of “youtube” the CPC is $0.03.</p>
+
+<p>That means for every click on an ad placed for the keyword “youtube, the advertiser charges $0.03.</p>
+
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/02/cpc-1.png" alt="cost-per-click" class="wp-image-4567" style="border-radius:10px;width:203px;height:auto"/></figure>
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+<p>Overall, good keyword research offers you deeper insights and predictability of a successful marketing campaign. With almost everything being covered in this post including what tools to use and how to use them, there are still aspects of keyword research that you will uncover on your own when you begin performing it.</p>
+
+<p>Now you are all aware of the importance of keyword research and how to do it. Start a blog and try out your hands.</p>
+
+<p>If you found this blog useful kindly share it with others.</p>
+
+<p>Thank you.</p>
+</div></article></div><section class="cta" aria-labelledby="nl-h"><h2 id="nl-h">Get practical SEO tips in your inbox</h2><p>One short, actionable guide at a time. No spam, unsubscribe anytime.</p><form aria-label="Subscribe to SEO tips" onsubmit="return __subscribe(this)"><label class="vh" for="nl-email">Email address</label><input id="nl-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"><button class="btn" type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite" tabindex="-1">You're on the list — welcome aboard!</p></section></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it d","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"WordPress Plugins are add-ons that enhance user experience and enrich utility and accessibility. They are small programs","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Readability in SEO is important as it helps understand information easily. Writing readable content is now urgent and ne","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"Link building is the practice of getting your website connected to others. It includes activities where other websites l","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand ","c":"keyword-research","r":"25 min read"}];</script><script>
+(function(){var box=document.getElementById('q'),res=document.getElementById('qres');
+if(!box)return;var idx=window.__POSTS||[];
+function show(){res.style.display='block';box.setAttribute('aria-expanded','true');}
+function hide(){res.style.display='none';box.setAttribute('aria-expanded','false');}
+function go(){var s=box.value.trim().toLowerCase();
+if(s.length<2){hide();return;}
+var hits=idx.filter(function(p){return (p.t+' '+p.d+' '+(p.c||'')).toLowerCase().indexOf(s)>-1;}).slice(0,6);
+if(!hits.length){res.innerHTML='<a><small>No results</small></a>';show();return;}
+res.innerHTML=hits.map(function(p){return '<a href="'+p.u+'">'+p.t+'<small>'+p.c+' · '+p.r+'</small></a>';}).join('');
+show();}
+box.addEventListener('input',go);box.addEventListener('focus',go);
+box.addEventListener('keydown',function(e){if(e.key==='Escape'){hide();box.blur();}});
+document.addEventListener('click',function(e){if(!res.contains(e.target)&&e.target!==box)hide();});})();</script><script>
+(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t)document.documentElement.setAttribute('data-theme',t);
+var MOON="<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z\"/></svg>",SUN="<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4\"/></svg>";
+function paint(){var b=document.getElementById('themebtn');if(!b)return;
+var dark=document.documentElement.getAttribute('data-theme')==='dark';
+b.innerHTML=dark?SUN:MOON;
+b.setAttribute('aria-pressed',dark?'true':'false');
+b.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');}
+paint();
+window.__toggleTheme=function(){var el=document.documentElement;
+var next=el.getAttribute('data-theme')==='dark'?'light':'dark';
+if(next==='light')el.removeAttribute('data-theme');else el.setAttribute('data-theme',next);
+try{localStorage.setItem('synthseo-theme',next);}catch(e){}
+paint();};})();</script><script>(function(){window.__toggleNav=function(){var n=document.getElementById('topnav');if(!n)return;
+var open=n.classList.toggle('open');var b=n.querySelector('.ham');
+if(b){b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Close menu':'Open menu');b.textContent=open?'✕':'☰';}};
+var t=document.querySelector('details.toc-card');if(t&&window.innerWidth<769)t.removeAttribute('open');})();</script><script>(function(){window.__subscribe=function(f){f.style.display='none';var ok=f.nextElementSibling;ok.style.display='block';try{ok.focus();}catch(e){}return false;};})();</script></body></html>

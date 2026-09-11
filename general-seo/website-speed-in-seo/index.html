@@ -1,0 +1,531 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Website Speed: Is It A Critical Factor For SEO In 2024?</title><meta name="description" content="Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it directly affects user experience."><link rel="canonical" href="https://synthseo.online/general-seo/website-speed-in-seo/"><meta property="og:title" content="Website Speed: Is It A Critical Factor For SEO In 2024?"><meta property="og:description" content="Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it directly affects user experience."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><script>(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</script><style>
+:root{--bg:#fff;--ink:#0d0d0d;--muted:#5f6368;--brand:#FF904C;--brand-ink:#B45309;--brand-deep:#4A5BE0;--btn:#4A5BE0;
+--card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.09);--code:#f4f5f6;
+--sh:0 1px 2px rgba(13,13,13,.04),0 12px 32px rgba(13,13,13,.07);--r:16px;--max:1120px}
+[data-theme=dark]{--bg:#0d0d0d;--ink:#f1f4f2;--muted:#9aa3ab;--brand:#FF904C;--brand-ink:#FFB27A;--brand-deep:#8DA2FF;--btn:#4A5BE0;
+--card:#141617;--bd:rgba(255,255,255,.07);--bd2:rgba(255,255,255,.12);--code:#17191b;
+--sh:0 1px 2px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.75 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-deep);text-decoration:none}a:hover{text-decoration:underline}
+h1,h2,h3{letter-spacing:-.025em;line-height:1.2}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--bg);
+border-bottom:1px solid var(--bd)}
+.nav{max-width:var(--max);margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:26px}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.02em;color:var(--brand-ink);margin-right:auto}
+.brand i{font-style:normal;color:var(--brand-deep)}
+.nav a.nl{color:var(--muted);font-weight:500;font-size:15px}.nav a.nl:hover{color:var(--ink);text-decoration:none}
+.btn{display:inline-block;background:var(--btn);color:#fff!important;font-weight:600;font-size:15px;
+padding:10px 24px;border-radius:9999px;border:0;cursor:pointer;letter-spacing:-.01em}
+.btn:hover{filter:brightness(1.1);text-decoration:none}
+.iconbtn{background:var(--code);border:1px solid var(--bd2);border-radius:9999px;width:44px;height:44px;flex:none;
+cursor:pointer;font-size:16px;line-height:1;color:var(--ink)}
+.searchbox{position:relative}
+.searchbox input{background:var(--code);border:1px solid var(--bd2);border-radius:9999px;color:var(--ink);
+padding:9px 18px;font:14px Inter,system-ui,sans-serif;width:210px;outline:none}
+.searchbox input:focus{border-color:var(--brand)}
+.searchres{position:absolute;top:46px;right:0;width:320px;background:var(--card);border:1px solid var(--bd2);
+border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:none}
+.searchres a{display:block;padding:12px 18px;color:var(--ink)}.searchres a:hover{background:var(--code);text-decoration:none}
+.searchres small{color:var(--muted);display:block;font-size:12px}
+/* hero */
+.hero{padding:64px 0 8px;text-align:left}
+.hero.slim{padding:48px 0 4px}
+.eyebrow{display:block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--muted);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5vw,54px);margin:0 0 16px;letter-spacing:-.035em}
+.hero p{color:var(--muted);font-size:19px;max-width:640px;margin:0 0 20px}
+.readmore{font-weight:600;font-size:16px}
+/* editorial list (Explore): one featured post + compact secondary rows */
+.feat-post{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
+padding:36px 0 40px;border-bottom:1px solid var(--bd2)}
+.feat-post h2{font-size:clamp(26px,3.6vw,38px);margin:10px 0 12px;letter-spacing:-.03em}
+.feat-post h2 a{color:var(--ink)}
+.feat-post p{color:var(--muted);font-size:17px;margin:0 0 12px;max-width:56ch}
+.feat-post img{width:100%;border-radius:var(--r)}
+.rows{padding:8px 0 64px}
+.rows-head{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--muted);margin:0;padding:28px 0 4px}
+.row{padding:22px 0;border-bottom:1px solid var(--bd)}
+.row h2{font-size:20px;margin:4px 0 6px}.row h2 a{color:var(--ink)}
+.row p{color:var(--muted);font-size:15px;margin:0 0 8px;max-width:70ch}
+.cat{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+color:var(--brand-ink);margin-bottom:8px}
+.meta{font-size:13px;color:var(--muted)}
+/* post */
+.post-layout{display:block;max-width:840px;padding:48px 0 24px}
+article.post h1{font-size:clamp(28px,4vw,42px);margin:8px 0 12px;letter-spacing:-.03em}
+article.post img{max-width:100%;height:auto;border-radius:12px}
+.feat{width:100%;max-height:400px;object-fit:cover;border-radius:var(--r);margin:20px 0 8px}
+.prose{font-size:17px;overflow-wrap:break-word;word-wrap:break-word}.prose h2{font-size:26px;margin:44px 0 12px}.prose h3{font-size:20px;margin:32px 0 8px}
+.prose pre{background:var(--code);padding:18px 22px;border-radius:12px;overflow:auto;font-size:14px}
+.prose code{background:var(--code);padding:2px 7px;border-radius:6px;font-size:.9em}
+.prose blockquote{border-left:3px solid var(--brand);margin:24px 0;padding:4px 0 4px 20px;color:var(--muted)}
+.toc-card{margin:26px 0 6px;border:1px solid var(--bd2);border-radius:var(--r);background:var(--card);box-shadow:var(--sh);padding:16px 22px;font-size:15px}
+.toc-card summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:10px;list-style:none;font-weight:700}
+.toc-card summary::-webkit-details-marker{display:none}
+.toc-card summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;flex:none;border-radius:8px;background:color-mix(in srgb,var(--brand) 16%,transparent);color:var(--brand-ink);font-weight:800}
+.toc-card[open] summary::before{content:"–"}
+.toc-card .toc-k{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.toc-card ul{list-style:none;margin:12px 0 4px;padding:14px 0 0;border-top:1px solid var(--bd)}
+.toc-card li{margin:8px 0;line-height:1.5}
+.toc-card li.toc-h3{padding-left:16px}
+.toc-card a{color:var(--muted)}
+.toc-card a:hover{color:var(--brand-deep)}
+/* subscribe */
+.cta{border:1px solid var(--bd);border-radius:20px;box-shadow:var(--sh);padding:40px 36px;text-align:left;
+margin:24px 0 72px;background:var(--card)}
+.cta h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 10px;letter-spacing:-.03em}
+.cta p{color:var(--muted);margin:0 0 24px}
+.cta form{display:flex;gap:10px;justify-content:flex-start;flex-wrap:wrap}
+.cta input[type=email]{border:1px solid var(--bd2);border-radius:9999px;padding:12px 22px;font-size:15px;
+width:min(320px,100%);background:var(--bg);color:var(--ink);outline:none}
+.cta input[type=email]:focus{border-color:var(--brand)}
+.cta .ok{display:none;color:var(--brand-deep);font-weight:600}
+footer{border-top:1px solid var(--bd);padding:36px 0 48px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+footer .sp{margin-left:auto;display:flex;gap:18px}
+@media(max-width:640px){.searchbox input{width:140px}.nav{gap:14px;padding:12px 16px}.wrap{padding:0 20px}.hero{padding:56px 0 16px}}
+/* mobile: hamburger nav, single column, fluid media + type, 44px tap targets */
+.ham{display:none;background:var(--code);border:1px solid var(--bd2);border-radius:10px;min-width:44px;min-height:44px;font-size:18px;line-height:1;color:var(--ink);cursor:pointer}
+img{max-width:100%;height:auto}
+.prose table{display:block;max-width:100%;overflow-x:auto}
+.prose pre{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.prose img{max-width:100%;height:auto}
+body{font-size:clamp(15px,.4vw + 14px,17px)}
+@media(max-width:768px){
+.nav{flex-wrap:wrap;gap:10px;padding:12px 16px}
+.ham{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;order:2}
+#themebtn{order:3}
+.nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
+.nav .searchbox{display:none;width:100%;order:4}
+.nav .searchbox input{width:100%}
+.nav.open a.nl,.nav.open .searchbox{display:block}
+.feat-post{grid-template-columns:1fr;gap:20px;padding:28px 0 32px}
+.hero{padding:56px 0 16px}
+.hero h1{font-size:clamp(30px,8vw,42px)}
+.hero p{font-size:clamp(16px,4.5vw,19px)}
+article.post h1{font-size:clamp(26px,7vw,34px)}
+.prose{font-size:clamp(16px,4.4vw,17px)}
+.prose h2{font-size:clamp(22px,5.6vw,26px)}
+.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.cta{padding:40px 20px}
+.wrap{padding:0 20px}
+}
+/* a11y: skip link, visible focus, TOC depth, reduced motion */
+.skip{position:absolute;left:16px;top:-72px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px;color:var(--bg);text-decoration:none}
+.vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--brand-deep);outline-offset:2px}
+.toc-card li.toc-h4{padding-left:32px}
+.prose a{overflow-wrap:break-word}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="post-layout"><article class="post"><span class="cat">general-seo</span><h1>Website Speed: Is It A Critical Factor For SEO In 2024?</h1><div class="meta">2024-06-02 · 13 min read · seo</div><img class="feat" src="/uploads/2024/06/14.png" alt="Website Speed: Is It A Critical Factor For SEO In 2024?" onerror="this.style.display='none'"><details class="toc-card" open><summary><span class="toc-k">On this page</span></summary><ul><li class="toc-h2"><a href="#what-is-website-speed-and-why-does-it-matter">What is website speed and why does it matter?</a></li><li class="toc-h2"><a href="#so-does-website-speed-boost-seo-rankings">So, does website speed boost SEO rankings?</a></li><li class="toc-h2"><a href="#is-my-website-slow">Is my website slow?</a></li><li class="toc-h2"><a href="#how-to-use-google-pagespeed-insights-to-assess-website-perfo">How to use Google PageSpeed Insights to assess website performance?</a></li><li class="toc-h3"><a href="#1-first-contentful-paint-fcp">#1: First Contentful Paint (FCP)</a></li><li class="toc-h3"><a href="#2-largest-contentful-paint-lcp">#2: Largest Contentful Paint (LCP)</a></li><li class="toc-h3"><a href="#3-cumulative-layout-shift-cls">#3: Cumulative Layout Shift (CLS)</a></li><li class="toc-h3"><a href="#4-interaction-to-next-paint-inp">#4: Interaction to Next Paint (INP):</a></li><li class="toc-h2"><a href="#how-do-i-make-my-website-blazing-fast">How do I make my website blazing fast?</a></li><li class="toc-h3"><a href="#1-compressing-images-before-uploading">#1: Compressing images before uploading</a></li><li class="toc-h3"><a href="#2-using-caching-plugins">#2: Using caching plugins</a></li><li class="toc-h3"><a href="#3-using-lightweight-themes">#3: Using lightweight themes</a></li><li class="toc-h3"><a href="#4-premium-hosting">#4: Premium hosting</a></li><li class="toc-h3"><a href="#5-css-and-js-minification">#5: CSS and JS minification</a></li><li class="toc-h3"><a href="#6-using-a-content-delivery-network">#6: Using a Content Delivery Network</a></li><li class="toc-h3"><a href="#7-limiting-the-number-of-plugins">#7: Limiting the number of plugins</a></li><li class="toc-h2"><a href="#wrap-up">Wrap up!</a></li></ul></details><div class="prose">
+<h2 class="wp-block-heading" id="what-is-website-speed-and-why-does-it-matter"><strong>What is website speed and why does it matter?</strong></h2>
+
+<p>Nowadays, having a website isn't enough if it can't load up quickly.</p>
+
+<p>The demand for responsive web and progressive web apps is increasing every single moment.</p>
+
+<p>And with the emergence of the latest technological advancements such as Web3 new standards are being set.</p>
+
+<p>But, is your website fast enough to beat the competition? Let’s first understand the definition of website speed.</p>
+
+<figure class="wp-block-image size-large has-custom-border is-style-default"><img onerror="this.style.display='none'" src="/uploads/2024/06/Website-speed_SynthSEO-1024x576.png" alt="" class="wp-image-5680" style="border-top-left-radius:15px;border-top-right-radius:15px;border-bottom-left-radius:15px;border-bottom-right-radius:15px"/></figure>
+
+<p style="padding-top:var(--wp--preset--spacing--30)">Website speed is the time duration elapsed by a website to load up its contents when a user enters its URL (Uniform Resource Locator) in the search bar.</p>
+
+<p>Imagine a website, perfect in almost all aspects.</p>
+
+<p>It has got an A+ in visuals and an A++ in content quality but users have to wait for decades to get it fully loaded. And only then, are they able to explore its content.</p>
+
+<p>Frustrating. Isn't it? </p>
+
+<p>Therefore, a good website is one that also excels in responsiveness along with visuals and rich content.</p>
+
+<p>But this isn't the only reason a website must load with a snap of fingers.</p>
+
+<p>The key reason is the importance of time. Time is crucial and nobody wants to waste it on waiting for a page to load so that they can find answers to their quest.</p>
+
+<p>So, whether you have a blog or an e-commerce store, your website needs to be quick to user interactions. </p>
+
+<h2 class="wp-block-heading" id="so-does-website-speed-boost-seo-rankings"><strong>So, does website speed boost SEO rankings?</strong></h2>
+
+<p>Yes. Website speed is directly proportionate to Search Engine Optimization.</p>
+
+<p>It’s simply, that the longer your page takes time to load the more likely it is that users will leave your website without navigating it.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/Website-speed-relates-to-SEO_SynthSEO.png" alt="" class="wp-image-5702" style="border-radius:10px"/></figure>
+
+<p>Worse, it can leave a bad impression on users as they will perceive your site as unreliable and unstable. Thereby increasing the chances that your page’s ranking will decrease quickly.</p>
+
+<p>And that could be one of the reasons why you are having higher bounce rates.</p>
+
+<p>Thus, it is equally essential to invest in building up your site’s performance to have <a href="/category/general-seo/"><em><strong>fruitful SEO</strong></em></a> results and champion the SERPs.</p>
+
+<p><strong>Recommended read:</strong> <a href="/category/general-seo/"><strong>Search Engine Optimisation: The first steps to follow</strong></a></p>
+
+<h2 class="wp-block-heading" id="is-my-website-slow"><strong>Is my website slow?</strong></h2>
+
+<p>Google says any page that takes <strong>more than 3 seconds</strong> to load is considered <strong>slow</strong>.</p>
+
+<p>So, if your website takes more than 3 seconds then you need to work on a lot of things to improve load time.</p>
+
+<p>But, how do you perform a website speed analysis? Do you manually enter your site's URL and then start a timer?</p>
+
+<p>We aren't living in stone ages.</p>
+
+<figure class="wp-block-image size-full has-custom-border is-style-default"><img onerror="this.style.display='none'" src="/uploads/2024/06/Google-PageSpeed-Insights_SynthSEO.png" alt="pagespeed insight_synthseo" class="wp-image-5602" style="border-radius:10px"/></figure>
+
+<p>Thanks to Google, cause we have <em><strong>PageSpeed Insights</strong>.</em> A tool designed especially to assess a site’s performance.</p>
+
+<p>There are numerous tools to check website speed such as <strong>Pingdom</strong> and <strong>GMetrix</strong>.</p>
+
+<p>However, Google PageSpeed Insights grants you a much deeper understanding of how your website behaves in terms of user interaction.</p>
+
+<p>PageSpeed Insights not only helps you understand how fast a page loads. </p>
+
+<p>But, also offers deeper insights into what factors contribute to significant performance improvements.</p>
+
+<h2 class="wp-block-heading" id="how-to-use-google-pagespeed-insights-to-assess-website-perfo"><strong>How to use Google PageSpeed Insights to assess website performance?</strong></h2>
+
+<p>Head over to PageSpeed Insights <em><a href="https://pagespeed.web.dev/**"><strong>https://pagespeed.web.dev/</strong></a></em> or you can also Google “<strong>PageSpeed Insights</strong>” to collect your website speed report. The following page appears.</p>
+
+<p>Enter the URL of <strong>your site</strong> and hit analyze.</p>
+
+<figure class="wp-block-image size-full is-resized has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/PageSpeed_Insights.png" alt="pagespeed_insights" class="wp-image-5603" style="border-radius:10px;aspect-ratio:6.7407407407407405;width:182px;height:auto"/><figcaption class="wp-element-caption"><strong>Figure 3: PageSpeed Insights</strong></figcaption></figure>
+
+<p>As soon as you click analyze, PageSpeed Insights will perform a real-time speed test of your site and will come up with results. </p>
+
+<p>If your website has thousands of pages then it may take some time - till then grab some coffee.</p>
+
+<p>The following will pop up on completion. There are two sections here, <strong>mobile and desktop</strong>.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/PageSpeed_results.png" alt="PageSpeed_results" class="wp-image-5604" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 4: PageSpeed Results</strong></figcaption></figure>
+
+<p>PageSpeed crawls your website using both mobile and desktop crawlbots.</p>
+
+<p>As there are <strong>more mobile users</strong> on the web, we are going to cover the website speed test for mobile only using PageSpeed.</p>
+
+<blockquote class="wp-block-quote">
+<p>💡 <strong>Note:</strong> There aren’t many differences in how to assess a website’s performance on mobile and desktop, though the results might be different for different screens.</p>
+</blockquote>
+
+<p style="padding-top:var(--wp--preset--spacing--40);padding-bottom:0">The result shows <strong>4 key components of a website</strong> that allow us to understand how good a page is not just in terms of performance but also accessibility, best practices adopted by the owner, and yes, SEO.</p>
+
+<p>As this blog post is primarily aimed at discussing website speed and performance, we will only cover the first component which is performance.</p>
+
+<p>Upon scrolling down further we see a ton of technical information regarding the site’s performance.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/PageSpeed_results_2-1.png" alt="PageSpeed_results_2" class="wp-image-5607" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 5: PageSpeed Results</strong></figcaption></figure>
+
+<p>These are <a href="https://backlinko.com/hub/seo/core-web-vitals#interaction-to-next-paint"><em><strong>Core Web Vitals</strong></em></a>. These metrics are important for better loading times, interactivity, and visual stability of a website.</p>
+
+<p>If you have already set up your <strong>Google Search Console</strong>, then you can access Core Web Vitals through it as well. But first.</p>
+
+<figure class="wp-block-image size-large has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/image-1-1024x576.png" alt="" class="wp-image-5708" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px"/></figure>
+
+<p>Let’s comprehend how each contributes to quick loading times.</p>
+
+<h3 class="wp-block-heading" id="1-first-contentful-paint-fcp">#1: <strong>First Contentful Paint (FCP)</strong></h3>
+
+<p>FCP calculates the duration of the first text or image gets colored. In layman's terms, FCP tells you the time taken to load the first text or image. A FCP which is,</p>
+
+<ul class="wp-block-list">
+<li>1.8 seconds or less = Good</li>
+
+<li>Between 1.8 seconds and 3 seconds = Needs improvement</li>
+
+<li>More than 3 seconds = Poor</li>
+</ul>
+
+<h3 class="wp-block-heading" id="2-largest-contentful-paint-lcp">#2: <strong>Largest Contentful Paint (LCP)</strong></h3>
+
+<p>LCP measures the moment at which the largest text or image is drawn or painted on the screen. </p>
+
+<p>It indicates the loading performance against time in seconds or simply the time taken to load when a user visits for the first time. If your page’s LCP is:</p>
+
+<ul class="wp-block-list">
+<li>2.5 seconds or less = Good</li>
+
+<li>Between 2.5 seconds and 4 seconds = Needs improvement</li>
+
+<li>More than 4 seconds = Poor</li>
+</ul>
+
+<h3 class="wp-block-heading" id="3-cumulative-layout-shift-cls">#3: <strong>Cumulative Layout Shift (CLS)</strong></h3>
+
+<p style="padding-top:0;padding-bottom:0">CLS measures a website’s layout’s stability. A well-performing website needs to have a stable structure. </p>
+
+<p style="padding-top:0;padding-bottom:0">Frequent changes in the placement of elements such as buttons, while the reader is about to click, can impact the user experience. </p>
+
+<p style="padding-top:0;padding-bottom:0">You must have experienced a horrible feeling when you were about to order something. But because of some advertisement on the page, the button moved away, resulting in clicking something else. </p>
+
+<p style="padding-top:0;padding-bottom:0">So, websites must maintain a proper layout to uplift user experience. The below video posted on Google’s <a href="https://web.dev/static/articles/cls/video/web-dev-assets/layout-instability-api/layout-instability2.webm"><strong>page</strong></a> expresses the situation aptly. </p>
+
+<p style="padding-top:0;padding-bottom:0">CLS doesn’t calculate any time duration, rather it focuses on measuring the frequency of layout distortion. A good CLS score is,</p>
+
+<ul class="wp-block-list">
+<li>0.1 or less = Good</li>
+
+<li>Between 0.1 and 0.25 = Needs improvement</li>
+
+<li>More than 0.25 = Poor</li>
+</ul>
+
+<h3 class="wp-block-heading" id="4-interaction-to-next-paint-inp">#4: <strong>Interaction to Next Paint (INP):</strong></h3>
+
+<p><a href="https://web.dev/articles/inp"><strong>INP</strong></a> is also an important performance factor. This measures a small delay or pause between the page’s response and the user’s interaction such as tap, click, or scroll. Google recommends the following INP values as being good, improvement needed, and poor.</p>
+
+<ul class="wp-block-list">
+<li>200 milliseconds or less = Good</li>
+
+<li>Between 200 milliseconds and 500 milliseconds = Needs improvement</li>
+
+<li>More than 500 milliseconds = Poor</li>
+</ul>
+
+<p>These have been the key metrics that depict how a page is performing. Tweaking only them can bring subtle user experience enhancement.</p>
+
+<p><strong>TL; DR</strong></p>
+
+<figure class="wp-block-table is-style-stripes has-small-font-size"><table style="border-style:none;border-width:0px"><thead><tr><th class="has-text-align-center" data-align="center"></th><th class="has-text-align-center" data-align="center">Good (if or less)</th><th class="has-text-align-center" data-align="center">Average (if between)</th><th class="has-text-align-center" data-align="center">Poor (if or more)</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center"><strong>FCP</strong></td><td class="has-text-align-center" data-align="center">1.8s</td><td class="has-text-align-center" data-align="center">1.8s and 3s </td><td class="has-text-align-center" data-align="center">3s</td></tr><tr><td class="has-text-align-center" data-align="center"><strong>LCP</strong></td><td class="has-text-align-center" data-align="center">2.5s</td><td class="has-text-align-center" data-align="center">2.5s and 4s </td><td class="has-text-align-center" data-align="center">4s</td></tr><tr><td class="has-text-align-center" data-align="center"><strong>CLS</strong></td><td class="has-text-align-center" data-align="center">0.1</td><td class="has-text-align-center" data-align="center">0.1 and 0.25</td><td class="has-text-align-center" data-align="center">0.25</td></tr><tr><td class="has-text-align-center" data-align="center"><strong>INP</strong></td><td class="has-text-align-center" data-align="center">200ms</td><td class="has-text-align-center" data-align="center">200ms and 500ms</td><td class="has-text-align-center" data-align="center">500ms</td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table 1: Core Web Vitals metrics</strong></figcaption></figure>
+
+<p class="has-medium-font-size">But, if you desire to unleash <strong><em>peak performance</em></strong> and gain absolute control over the slightest and minutest elements of your page.</p>
+
+<p>Then, consider these speed metrics too.</p>
+
+<ol class="wp-block-list">
+<li><strong>Total Blocking Time (TBT)</strong></li>
+
+<li><strong>Speed Index</strong></li>
+</ol>
+
+<p>Upon further scrolling, we notice a diagnostic report highlighting essential areas to work on for improving website performance.</p>
+
+<p>By clicking the drop-down arrow you can understand more about the issue and how to fix them to enhance your site’s responsiveness.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/PageSpeed_results_3.png" alt="pagespeed_results" class="wp-image-5612" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 7: PageSpeed Diagnostics</strong></figcaption></figure>
+
+<h2 class="wp-block-heading" id="how-do-i-make-my-website-blazing-fast"><strong>How do I make my website blazing fast?</strong></h2>
+
+<p>There are tons of recommendations on how to make your website respond in an instant to user engagement.</p>
+
+<p>However, the basics can have a significant amount of impact on the speed and responsiveness of the site. </p>
+
+<p>Some of the best practices are as follows:</p>
+
+<h3 class="wp-block-heading" id="1-compressing-images-before-uploading"><strong>#1: Compressing images before uploading</strong></h3>
+
+<p>Every image, video, gif, and even text on a website takes up some storage on the host’s server.</p>
+
+<p>Therefore, it becomes essential to reduce file size to not just save space but also make loading those images quicker.</p>
+
+<p>TinyPNG for PNG image formats and TinyJPG for JPG image formats are great tools that can <strong>compress images up to 50%</strong> of their original size.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/TinyPNG.png" alt="tinypng" class="wp-image-5614" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 8: TinyPNG homepage</strong></figcaption></figure>
+
+<p>You can also convert your images into <strong>WebP format</strong> which is expected to become web standard soon because of less size and better quality in comparison to PNG and JPG.</p>
+
+<p>Just upload your images and download them in the desired format.</p>
+
+<h3 class="wp-block-heading" id="2-using-caching-plugins"><strong>#2: Using caching plugins</strong></h3>
+
+<p>Caching is a process through which <strong>files are temporarily stored</strong> on a device. Through caching, loading up files is made quicker and snappy.</p>
+
+<p>Ever wondered why a website takes more time to load, when you first visit it and becomes a bit faster during the second time, and so on?</p>
+
+<p>That's primarily because of caching. When you visit a page for the first time most files on the page are stored in your device which takes some time.</p>
+
+<p>During the second visit, this time duration was reduced cause there was no need to download the files again (as they’re already stored on your device).</p>
+
+<p>Through caching your users enjoy fast responses while exploring your page.</p>
+
+<p>Some of the best caching <a href="/plugins/best-free-wordpress-plugins/"><strong>plugins for WordPress</strong></a> are:</p>
+
+<ul class="wp-block-list">
+<li>W3 Total Cache</li>
+
+<li>Light speed Cache</li>
+
+<li>WP Fastest Cache</li>
+</ul>
+
+<p>If you don't want to use caching then you should get the new Speculative Loading officially launched by the WordPress performance team. </p>
+
+<p>I have switched to Speculative Loading and I don't look back at installing caching plugins. </p>
+
+<p><strong>Recommended read:</strong> <a href="/plugins/best-free-wordpress-plugins/"><strong>10 Best Free WordPress Plugins You Cannot Miss</strong></a></p>
+
+<h3 class="wp-block-heading" id="3-using-lightweight-themes"><strong>#3: Using lightweight themes</strong></h3>
+
+<p>Themes also affect website speed.</p>
+
+<p>A lightweight theme is quick to show up compared to one with fancy animations and graphics.</p>
+
+<p>Striking the right balance between visual and theme size is important.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/Elementor-and-Blocksy_SynthSEO.png" alt="elementor and blocksy_synthseo
+" class="wp-image-5616" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 9: Elementor and Blocksy WordPress theme plugins</strong></figcaption></figure>
+
+<p>WordPress has an ever-ending list of themes including light-weight ones and alluring visuals too.</p>
+
+<p>There are also theme plugins as well, like Elementor allowing complete customization.</p>
+
+<p>If you want something between block functionality yet not messy, then you should use <strong>Blocksy</strong>. </p>
+
+<p>I use it for SynthSEO because it is lightweight and offers most features without any compromises. </p>
+
+<h3 class="wp-block-heading" id="4-premium-hosting"><strong>#4: Premium hosting</strong></h3>
+
+<p>Your website hosting provider is also a contributor to site speed. Having a premium hosting provider can significantly boost site speed. How?</p>
+
+<p>Premium plans offer better hardware.</p>
+
+<p>Such packages often come with <strong>Solid State Drive</strong> (SSDs are faster than HDD because they don't have mechanical parts) and a better Central Professing Unit (CPU) — such as <strong>AMD ThreadRipper</strong> or <strong>Intel XEON</strong> improving server load times and response time.</p>
+
+<p>So if you want a little edge in terms of server response duration. You should consider upgrading your hosting plan.</p>
+
+<p>It is also essential that you purchase your hosting plan from a reliable provider like <strong>Hostinger</strong>, GoDaddy, and others.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/Hostinger_plans.png" alt="hostinger plans" class="wp-image-5617" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 10: Hostinger Plans</strong></figcaption></figure>
+
+<p>Hostinger has taken the game a level up.</p>
+
+<p>The hosting provider now offers much faster <strong>NVMe</strong> (Non-Volatile Memory Express) SSDs which are reported to be at least <strong><a href="https://www.ibm.com/think/topics/ssd-vs-nvme#:~:text=For the fastest data transfer,speed of a SATA SSD.)">3 times faster</a></strong> than normal SSDs.</p>
+
+<p>Other than that, these brands offer better server uptime keeping your site alive 24×7, secure, and consistent post-purchase support.</p>
+
+<h3 class="wp-block-heading" id="5-css-and-js-minification"><strong>#5: CSS and JS minification</strong></h3>
+
+<p>Websites are fueled by programming languages like Cascading Style Sheets (CSS) and JavaScript (JS).</p>
+
+<p>CSS is used to design visuals and layouts.</p>
+
+<ul class="wp-block-list">
+<li>Colors</li>
+
+<li>Fonts</li>
+
+<li>Spacing</li>
+</ul>
+
+<p>Like that.</p>
+
+<p>JS brings better functionality to a page.</p>
+
+<ul class="wp-block-list">
+<li>Form validation - collecting data from user</li>
+
+<li>Animations</li>
+</ul>
+
+<p>These include a heap of data on how your site should look and behave. And are stored on the server.</p>
+
+<p>If CSS and JS <strong>files are large</strong> then the device takes a <strong>longer time</strong> to load them. This lengthens the wait time for a user.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/Standard_JavaScript.png" alt="standard JavaScript
+" class="wp-image-5620" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 11: Non-minimized JavaScript</strong></figcaption></figure>
+
+<p>Skilled developers often write CSS and JS as minimal so that the file size is reduced to a much greater extent.</p>
+
+<p>But this can sometimes be reduced further to enhance data exchange between client (user) and server.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/Minimized_JavaScript.png" alt="Minimized_JavaScript" class="wp-image-5621" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 12: Minimized JavaScript</strong></figcaption></figure>
+
+<p>Some tools can help you minimize CSS and JS, but I recommend contacting a skilled developer who can take responsibility for the whole task.</p>
+
+<h3 class="wp-block-heading" id="6-using-a-content-delivery-network"><strong>#6: Using a Content Delivery Network</strong></h3>
+
+<p>Ever wondered where your website files or data are stored (yes it's a server but where that's physically located)?</p>
+
+<p>Often web servers are stored far from where a user accesses its data. This increases data transfer speeds as there are always distortions between the two.</p>
+
+<p>A CDN is useful in that case.</p>
+
+<p><strong>CDNs are networks</strong> made up of servers specializing in delivering website content (images, pages, videos, gifs, etc.) to users as per their geographical presence.</p>
+
+<p>Here’s an image that helps in visualizing the use case of CDNs for improving website speed.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/Content-Delivery-Network_SynthSEO.png" alt="Content Delivery Network_SynthSEO" class="wp-image-5623" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 13: Content Delivery Networks</strong></figcaption></figure>
+
+<p>Let's say a website you are trying to access has files stored on a <strong>server in Washington D.C.</strong>, while you are present in <strong>New Delhi, India</strong>. The page takes 3.25 seconds to load.</p>
+
+<p>The website owners understand that increased delay has affected user experience. So, they set up a CDN server in <strong>Niger</strong>. Now accessing the same page takes 0.25s.</p>
+
+<p>Since the distance has been reduced by great numbers, the time duration to serve the page has been reduced.</p>
+
+<p>CDNs are mirror (copy or backup) data present in the original server. This also helps lessen the risk of 404 errors due to the presence of a backup.</p>
+
+<p>However, the key highlight here is that CDNs are set up near the cluster of users, reducing the time spent accessing data or data travel speed.</p>
+
+<h3 class="wp-block-heading" id="7-limiting-the-number-of-plugins"><strong>#7: Limiting the number of plugins</strong></h3>
+
+<p>More plugins = slow website.</p>
+
+<p>Though there isn't any specific number that limits the use of plugins, still you should be monitoring your plugin inventory over time. </p>
+
+<p>WordPress plugins primarily use JS.</p>
+
+<p>Therefore, using a lot of plugins can increase file size leading to increased load times.</p>
+
+<p>It is a safe practice to check site speed after installing plugins.</p>
+
+<p>Also, using <strong>too many plugins</strong> can cause conflict among them, which can surely impact accessibility and performance.</p>
+
+<figure class="wp-block-image size-full has-custom-border"><img onerror="this.style.display='none'" src="/uploads/2024/06/WordPress_page.png" alt="WordPress dashboard plugins" class="wp-image-5624" style="border-radius:10px"/><figcaption class="wp-element-caption"><strong>Figure 14: WordPress plugins dashboard</strong></figcaption></figure>
+
+<p>WordPress has an inbuilt site health status dashboard allowing you to understand what unused plugins you should consider deleting. </p>
+
+<p>It also suggests deleting unused themes which can compromise the security of the site. </p>
+
+<p>Finally, there are performance-related recommendations too such as enabling persistent object cache and important modules that could be missing.</p>
+
+<h2 class="wp-block-heading" id="wrap-up"><strong>Wrap up!</strong></h2>
+
+<p>To dominate the SERPs it has become extremely needful for websites to show up instantly on request.</p>
+
+<p>Hence, adopting website speed optimization is a must even for small businesses. Lower site speeds can even lead to being penalized by Google which can be hurtful for an established brand.</p>
+
+<p>A good approach to improving website speed begins with understanding why a page loads slowly or why a website won't load at all.</p>
+
+<p>Chalking out a strategy to constantly monitor website performance is valuable for consistently showing up on the SERPs.</p>
+
+<p>Help a friend with a slow website by sharing this post.</p>
+</div></article></div><section class="cta" aria-labelledby="nl-h"><h2 id="nl-h">Get practical SEO tips in your inbox</h2><p>One short, actionable guide at a time. No spam, unsubscribe anytime.</p><form aria-label="Subscribe to SEO tips" onsubmit="return __subscribe(this)"><label class="vh" for="nl-email">Email address</label><input id="nl-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"><button class="btn" type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite" tabindex="-1">You're on the list — welcome aboard!</p></section></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it d","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"WordPress Plugins are add-ons that enhance user experience and enrich utility and accessibility. They are small programs","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Readability in SEO is important as it helps understand information easily. Writing readable content is now urgent and ne","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"Link building is the practice of getting your website connected to others. It includes activities where other websites l","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand ","c":"keyword-research","r":"25 min read"}];</script><script>
+(function(){var box=document.getElementById('q'),res=document.getElementById('qres');
+if(!box)return;var idx=window.__POSTS||[];
+function show(){res.style.display='block';box.setAttribute('aria-expanded','true');}
+function hide(){res.style.display='none';box.setAttribute('aria-expanded','false');}
+function go(){var s=box.value.trim().toLowerCase();
+if(s.length<2){hide();return;}
+var hits=idx.filter(function(p){return (p.t+' '+p.d+' '+(p.c||'')).toLowerCase().indexOf(s)>-1;}).slice(0,6);
+if(!hits.length){res.innerHTML='<a><small>No results</small></a>';show();return;}
+res.innerHTML=hits.map(function(p){return '<a href="'+p.u+'">'+p.t+'<small>'+p.c+' · '+p.r+'</small></a>';}).join('');
+show();}
+box.addEventListener('input',go);box.addEventListener('focus',go);
+box.addEventListener('keydown',function(e){if(e.key==='Escape'){hide();box.blur();}});
+document.addEventListener('click',function(e){if(!res.contains(e.target)&&e.target!==box)hide();});})();</script><script>
+(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t)document.documentElement.setAttribute('data-theme',t);
+var MOON="<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z\"/></svg>",SUN="<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4\"/></svg>";
+function paint(){var b=document.getElementById('themebtn');if(!b)return;
+var dark=document.documentElement.getAttribute('data-theme')==='dark';
+b.innerHTML=dark?SUN:MOON;
+b.setAttribute('aria-pressed',dark?'true':'false');
+b.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');}
+paint();
+window.__toggleTheme=function(){var el=document.documentElement;
+var next=el.getAttribute('data-theme')==='dark'?'light':'dark';
+if(next==='light')el.removeAttribute('data-theme');else el.setAttribute('data-theme',next);
+try{localStorage.setItem('synthseo-theme',next);}catch(e){}
+paint();};})();</script><script>(function(){window.__toggleNav=function(){var n=document.getElementById('topnav');if(!n)return;
+var open=n.classList.toggle('open');var b=n.querySelector('.ham');
+if(b){b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Close menu':'Open menu');b.textContent=open?'✕':'☰';}};
+var t=document.querySelector('details.toc-card');if(t&&window.innerWidth<769)t.removeAttribute('open');})();</script><script>(function(){window.__subscribe=function(f){f.style.display='none';var ok=f.nextElementSibling;ok.style.display='block';try{ok.focus();}catch(e){}return false;};})();</script></body></html>
