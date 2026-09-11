@@ -7,6 +7,7 @@ if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</
 
 
 
+
 :root{--bg:#fff;--ink:#181E15;--body:#2b3027;--muted:#6C6E79;--brand:#FF904C;--brand-deep:#4A5BE0;--brand-tint:#FFEDDD;--hero-wash:#FDF1E7;--btn:#0d0d0d;--btn-ink:#fff;--brand-ink:#B45309;
 --card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.08);--code:#f5f5f5;
 --sh:rgba(0,0,0,.03) 0 2px 4px;--btnsh:rgba(0,0,0,.06) 0 1px 2px;--r:16px;--max:1120px;
@@ -22,8 +23,8 @@ a{color:var(--ink);text-decoration:none}a:hover{color:var(--brand-deep)}
 h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;line-height:1.15;font-weight:600}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
 /* header */
-header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);
-border-bottom:1px solid var(--bd);backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) saturate(1.5)}
+header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 70%,transparent);
+border-bottom:1px solid var(--bd);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%)}
 .nav{max-width:var(--max);margin:0 auto;padding:6px 32px;display:flex;align-items:center;gap:26px}
 .brand{font-weight:600;font-size:18px;letter-spacing:-.02em;color:var(--brand-ink);margin-right:auto}
 .brand i{font-style:normal;color:var(--brand-deep)}
@@ -31,7 +32,7 @@ border-bottom:1px solid var(--bd);backdrop-filter:blur(16px) saturate(1.5);-webk
 .btn{display:inline-block;background:var(--btn);color:var(--btn-ink)!important;font-weight:500;font-size:15px;
 padding:8px 24px;border-radius:9999px;border:0;cursor:pointer;box-shadow:var(--btnsh)}
 .btn:hover{opacity:.9;text-decoration:none;color:var(--btn-ink)!important}
-.ctl{display:inline-flex;align-items:center;gap:2px;background:color-mix(in srgb,var(--code) 72%,transparent);border:1px solid var(--bd2);border-radius:9999px;padding:2px;backdrop-filter:blur(12px) saturate(1.4);-webkit-backdrop-filter:blur(12px) saturate(1.4)}.ctl .ham,.ctl .iconbtn{background:transparent;border:0;box-shadow:none;border-radius:9999px;width:36px;height:36px;min-width:36px;min-height:36px}.ctl .ham{margin-left:0;order:0}.ctl #themebtn{border-left:1px solid var(--bd2);border-radius:0 9999px 9999px 0}
+.ctl{display:inline-flex;align-items:center;gap:2px;background:color-mix(in srgb,var(--code) 72%,transparent);border:1px solid var(--bd2);border-radius:9999px;padding:2px;backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 4px 16px rgba(0,0,0,.08)}.ctl .ham,.ctl .iconbtn{background:transparent;border:0;box-shadow:none;border-radius:9999px;width:36px;height:36px;min-width:36px;min-height:36px}.ctl .ham{margin-left:0;order:0}.ctl #themebtn{border-left:1px solid var(--bd2);border-radius:0 9999px 9999px 0}
 .iconbtn{background:var(--code);border:1px solid var(--bd2);border-radius:14px;width:44px;height:44px;flex:none;
 cursor:pointer;font-size:16px;line-height:1;color:var(--ink)}
 .searchbox{position:relative}
@@ -68,7 +69,7 @@ color:var(--muted);margin:0;padding:28px 0 4px}
 [data-theme=dark] .rows .row:nth-of-type(even) .cat{color:#8DA2FF;background:rgba(141,162,255,.14)}
 .cat{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
 color:var(--brand-deep);background:var(--brand-tint);border-radius:9999px;padding:4px 12px;margin-bottom:8px}
-.meta{font:500 12px/1.6 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.meta{font:500 12.5px/1.6 var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
 /* post */
 .post-layout{display:block;max-width:840px;padding:48px 0 24px}
 article.post h1{font-size:clamp(28px,4vw,42px);margin:8px 0 12px;letter-spacing:-.03em;font-weight:600}
@@ -113,7 +114,7 @@ img{max-width:100%;height:auto}
 body{font-size:clamp(15px,.4vw + 14px,17px)}
 @media(max-width:768px){
 .nav{flex-wrap:wrap;gap:8px;padding:4px 10px}
-.ctl{display:inline-flex;margin-left:auto;order:2}.ctl .ham{display:inline-flex;align-items:center;justify-content:center}
+.ctl{display:inline-flex;margin-left:auto;order:2}.ctl .ham{display:inline-flex;align-items:center;justify-content:center}.nav .ctl{display:contents}.nav .brand{order:1}.ctl .ham{order:0;margin-left:0}#themebtn{order:2;margin-left:auto}.ctl .ham,.ctl #themebtn{width:40px;height:40px;min-width:40px;min-height:40px;border-radius:50%;background:color-mix(in srgb,var(--code) 60%,transparent);border:1px solid var(--bd2);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}.ctl #themebtn{border-left:0}
 #themebtn{order:3}
 .nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
 .nav .searchbox{display:none;width:100%;order:4}
@@ -147,7 +148,7 @@ font:500 13px/1.5 var(--sans);color:var(--muted);padding:8px 0 0}
 border-top:1px solid var(--bd2);padding-top:24px;margin-top:8px}
 .post .share .sh-t{font:600 12px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
 .post .share .sbtn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border-radius:14px;
-border:1px solid var(--bd2);background:var(--card);color:var(--ink);font:500 14px var(--sans);cursor:pointer}
+border:1px solid var(--bd2);background:var(--card);color:var(--ink);font:500 14px var(--sans);cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}
 .post .share .sbtn:hover{border-color:var(--brand-deep);color:var(--brand-deep);text-decoration:none}
 @media(max-width:900px){
 .post-layout.post{grid-template-columns:1fr}
@@ -190,7 +191,7 @@ border-top:1px solid var(--bd2)}
 .post-layout.post .side::before{content:"";display:block;width:40px;height:4px;border-radius:99px;background:var(--bd2);margin:10px auto 2px}
 .post-layout.post .side .toc-card{background:transparent;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;border-radius:20px 20px 0 0}
 .post-layout.post .side summary{min-height:52px;font-size:15px}
-.post-layout.post .side{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:0;border:1px solid var(--bd2);border-radius:9999px;box-shadow:0 8px 32px rgba(0,0,0,.14)}
+.post-layout.post .side{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:0;border:1px solid var(--bd2);border-radius:9999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 8px 32px rgba(0,0,0,.14)}
 .post-layout.post .side::before{display:none}
 .post-layout.post .side .toc-card{padding:2px 10px}
 .post-layout.post .side summary{min-height:48px}
@@ -212,7 +213,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[
 
 
 
-</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><span class="ctl" role="group" aria-label="Page controls"><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button></span><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav><div class="readbar" aria-hidden="true"><i id="readbarfill"></i></div></header><main class="wrap" id="main" tabindex="-1"><div class="hero slim"><span class="eyebrow">Topic · 1 guide</span><h1 style="text-transform:capitalize">general-seo</h1></div><div class="rows"><div class="row"><span class="cat">general-seo</span><h2><a href="/general-seo/website-speed-in-seo/">Website Speed: Is It A Critical Factor For SEO In 2024?</a></h2><p>Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it directly affects user</p><div class="meta">2024-06-02 · 13 min read</div></div></div></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"What page speed really means, how Google measures it — FCP, LCP, CLS, INP — and the fixes worth doing first.","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"Ten free plugins covering SEO, analytics, and editing — what each one does and how to pick between them.","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Why readable content ranks better: simple language, tighter sentences, clear structure, and three tests to check your work.","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"What link building actually is, why links still move rankings, and three white-hat ways to earn them.","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"How to find what your users search for, judge intent and competition, and turn it into content that ranks.","c":"keyword-research","r":"25 min read"}];</script><script>
+
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><span class="ctl" role="group" aria-label="Page controls"><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button></span><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav><div class="readbar" aria-hidden="true"><i id="readbarfill"></i></div></header><main class="wrap" id="main" tabindex="-1"><div class="hero slim"><span class="eyebrow">Topic · 1 guide</span><h1 style="text-transform:capitalize">general-seo</h1></div><div class="rows"><div class="row"><span class="cat">general-seo</span><h2><a href="/general-seo/website-speed-in-seo/">Website Speed: Is It A Critical Factor For SEO In 2024?</a></h2><p>Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it directly affects user</p><div class="meta">2nd June 2024 · 13 min read</div></div></div></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"What page speed really means, how Google measures it — FCP, LCP, CLS, INP — and the fixes worth doing first.","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"Ten free plugins covering SEO, analytics, and editing — what each one does and how to pick between them.","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Why readable content ranks better: simple language, tighter sentences, clear structure, and three tests to check your work.","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"What link building actually is, why links still move rankings, and three white-hat ways to earn them.","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"How to find what your users search for, judge intent and competition, and turn it into content that ranks.","c":"keyword-research","r":"25 min read"}];</script><script>
 (function(){var box=document.getElementById('q'),res=document.getElementById('qres');
 if(!box)return;var idx=window.__POSTS||[];
 function show(){res.style.display='block';box.setAttribute('aria-expanded','true');}
