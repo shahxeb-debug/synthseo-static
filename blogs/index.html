@@ -5,6 +5,7 @@ if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</
 
 
 
+
 :root{--bg:#fff;--ink:#181E15;--body:#2b3027;--muted:#6C6E79;--brand:#FF904C;--brand-deep:#4A5BE0;--brand-tint:#FFEDDD;--hero-wash:#FDF1E7;--btn:#0d0d0d;--btn-ink:#fff;--brand-ink:#B45309;
 --card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.08);--code:#f5f5f5;
 --sh:rgba(0,0,0,.03) 0 2px 4px;--btnsh:rgba(0,0,0,.06) 0 1px 2px;--r:16px;--max:1120px;
@@ -111,7 +112,7 @@ img{max-width:100%;height:auto}
 body{font-size:clamp(15px,.4vw + 14px,17px)}
 @media(max-width:768px){
 .nav{flex-wrap:wrap;gap:8px;padding:6px 12px}
-.ctl{display:inline-flex;margin-left:auto;order:2}
+.ctl{display:inline-flex;margin-left:auto;order:2}.ctl .ham{display:inline-flex;align-items:center;justify-content:center}
 #themebtn{order:3}
 .nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
 .nav .searchbox{display:none;width:100%;order:4}
@@ -204,6 +205,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[
 .toc-card li.toc-h4{padding-left:32px}
 .prose a{overflow-wrap:break-word}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
 
 
 
