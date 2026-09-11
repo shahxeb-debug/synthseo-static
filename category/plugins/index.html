@@ -1,10 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>plugins — SynthSEO</title><meta name="description" content="Posts about plugins."><link rel="canonical" href="https://synthseo.online/category/plugins/"><meta property="og:title" content="plugins — SynthSEO"><meta property="og:description" content="Posts about plugins."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><script>(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>plugins — SynthSEO</title><meta name="description" content="Posts about plugins."><link rel="canonical" href="https://synthseo.online/category/plugins/"><meta property="og:title" content="plugins — SynthSEO"><meta property="og:description" content="Posts about plugins."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet"><script>(function(){var t=null;try{t=localStorage.getItem('synthseo-theme');}catch(e){}
 if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
 if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</script><style>
-:root{--bg:#fff;--ink:#0d0d0d;--body:#333;--muted:#666;--brand:#FF904C;--brand-deep:#4A5BE0;--brand-tint:#FFEDDD;--hero-wash:#FDF1E7;--btn:#0d0d0d;--btn-ink:#fff;--brand-ink:#B45309;
+
+:root{--bg:#fff;--ink:#181E15;--body:#2b3027;--muted:#6C6E79;--brand:#FF904C;--brand-deep:#4A5BE0;--brand-tint:#FFEDDD;--hero-wash:#FDF1E7;--btn:#0d0d0d;--btn-ink:#fff;--brand-ink:#B45309;
 --card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.08);--code:#f5f5f5;
 --sh:rgba(0,0,0,.03) 0 2px 4px;--btnsh:rgba(0,0,0,.06) 0 1px 2px;--r:16px;--max:1120px;
---sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--display:Sora,Inter,system-ui,sans-serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 [data-theme=dark]{--bg:#0d0d0d;--ink:#ededed;--body:#c9c9c9;--muted:#a0a0a0;--brand:#FF904C;--brand-deep:#8DA2FF;--brand-tint:rgba(255,144,76,.16);--hero-wash:rgba(255,144,76,.10);--btn:#f5f5f5;--btn-ink:#0d0d0d;--brand-ink:#FFB27A;
 --card:#141414;--bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.12);--code:#1a1a1a;
@@ -13,7 +14,7 @@ if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</
 body{margin:0;background:var(--bg);color:var(--ink);
 font:16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:var(--ink);text-decoration:none}a:hover{color:var(--brand-deep)}
-h1,h2,h3{letter-spacing:-.02em;line-height:1.2;font-weight:600}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;line-height:1.15;font-weight:600}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
 /* header */
 header.top{position:sticky;top:0;z-index:50;background:var(--bg);
@@ -123,6 +124,30 @@ article.post h1{font-size:clamp(26px,7vw,34px)}
 .cta{padding:40px 20px}
 .wrap{padding:0 20px}
 }
+
+/* semrush-style article chrome: breadcrumbs, sticky TOC rail, share row */
+.crumbs{grid-column:1/-1;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+font:500 13px/1.5 var(--sans);color:var(--muted);padding:8px 0 0}
+.crumbs a{color:var(--muted)}.crumbs a:hover{color:var(--brand-deep)}
+.crumbs span{color:var(--muted);opacity:.7}
+.post-layout.post{display:grid;grid-template-columns:232px minmax(0,1fr);gap:24px 56px;max-width:1120px}
+.post-layout.post .side{align-self:start;position:sticky;top:76px;min-width:0}
+.post-layout.post .side .toc-card{margin:0}
+.post-layout.post .side .toc-card ul{max-height:62vh;overflow:auto}
+.post-layout.post article.post{min-width:0}
+.post article.post h1{font-size:clamp(32px,4.5vw,46px)}
+.post .prose{max-width:68ch}
+.post .share{grid-column:2;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+border-top:1px solid var(--bd2);padding-top:24px;margin-top:8px}
+.post .share .sh-t{font:600 12px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.post .share .sbtn{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:9999px;
+border:1px solid var(--bd2);background:var(--card);color:var(--ink);font:500 14px var(--sans);cursor:pointer}
+.post .share .sbtn:hover{border-color:var(--brand-deep);color:var(--brand-deep);text-decoration:none}
+@media(max-width:900px){
+.post-layout.post{grid-template-columns:1fr}
+.post-layout.post .side{position:static}
+.post .share{grid-column:1}
+}
 /* a11y: skip link, visible focus, TOC depth, reduced motion */
 .skip{position:absolute;left:16px;top:-72px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none}
 .skip:focus{top:12px;color:var(--bg);text-decoration:none}
@@ -131,7 +156,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[
 .toc-card li.toc-h4{padding-left:32px}
 .prose a{overflow-wrap:break-word}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="hero slim"><span class="eyebrow">Topic · 1 guide</span><h1 style="text-transform:capitalize">plugins</h1></div><div class="rows"><div class="row"><span class="cat">plugins</span><h2><a href="/plugins/best-free-wordpress-plugins/">10 Best Free WordPress Plugins You Cannot Miss</a></h2><p>WordPress Plugins are add-ons that enhance user experience and enrich utility and accessibility. They are small programs that run on your si</p><div class="meta">2024-04-04 · 14 min read</div></div></div></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"Website speed is the total time taken to load all its content. In SEO, website speed is an essential factor because it d","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"WordPress Plugins are add-ons that enhance user experience and enrich utility and accessibility. They are small programs","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Readability in SEO is important as it helps understand information easily. Writing readable content is now urgent and ne","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"Link building is the practice of getting your website connected to others. It includes activities where other websites l","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand ","c":"keyword-research","r":"25 min read"}];</script><script>
+
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="hero slim"><span class="eyebrow">Topic · 1 guide</span><h1 style="text-transform:capitalize">plugins</h1></div><div class="rows"><div class="row"><span class="cat">plugins</span><h2><a href="/plugins/best-free-wordpress-plugins/">10 Best Free WordPress Plugins You Cannot Miss</a></h2><p>WordPress Plugins are add-ons that enhance user experience and enrich utility and accessibility. They are small programs that run on your si</p><div class="meta">2024-04-04 · 14 min read</div></div></div></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"What page speed really means, how Google measures it — FCP, LCP, CLS, INP — and the fixes worth doing first.","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"Ten free plugins covering SEO, analytics, and editing — what each one does and how to pick between them.","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Why readable content ranks better: simple language, tighter sentences, clear structure, and three tests to check your work.","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"What link building actually is, why links still move rankings, and three white-hat ways to earn them.","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"How to find what your users search for, judge intent and competition, and turn it into content that ranks.","c":"keyword-research","r":"25 min read"}];</script><script>
 (function(){var box=document.getElementById('q'),res=document.getElementById('qres');
 if(!box)return;var idx=window.__POSTS||[];
 function show(){res.style.display='block';box.setAttribute('aria-expanded','true');}
