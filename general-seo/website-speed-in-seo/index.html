@@ -3,6 +3,7 @@ if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='
 if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</script><style>
 
 
+
 :root{--bg:#fff;--ink:#181E15;--body:#2b3027;--muted:#6C6E79;--brand:#FF904C;--brand-deep:#4A5BE0;--brand-tint:#FFEDDD;--hero-wash:#FDF1E7;--btn:#0d0d0d;--btn-ink:#fff;--brand-ink:#B45309;
 --card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.08);--code:#f5f5f5;
 --sh:rgba(0,0,0,.03) 0 2px 4px;--btnsh:rgba(0,0,0,.06) 0 1px 2px;--r:16px;--max:1120px;
@@ -107,13 +108,13 @@ img{max-width:100%;height:auto}
 .prose img{max-width:100%;height:auto}
 body{font-size:clamp(15px,.4vw + 14px,17px)}
 @media(max-width:768px){
-.nav{flex-wrap:wrap;gap:10px;padding:8px 16px}
+.nav{flex-wrap:wrap;gap:8px;padding:6px 12px}
 .ham{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;order:2}
 #themebtn{order:3}
 .nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
 .nav .searchbox{display:none;width:100%;order:4}
-.nav .searchbox input{width:100%}
-.nav.open a.nl,.nav.open .searchbox{display:block}
+.nav .searchbox input{width:100%;padding:8px 14px;font-size:14px}
+.ham,#themebtn{width:40px;height:40px;min-width:40px;min-height:40px}.brand{font-size:17px}.nav.open a.nl,.nav.open .searchbox{display:block}
 .feat-post{grid-template-columns:1fr;gap:20px;padding:28px 0 32px}
 .hero{padding:40px 24px;margin-top:20px}
 .hero h1{font-size:clamp(30px,8vw,42px)}
@@ -151,7 +152,7 @@ border:1px solid var(--bd2);background:var(--card);color:var(--ink);font:500 14p
 }
 
 /* reader changelist: readbar, glass TOC, author, keep-reading, icon share */
-.readbar{position:fixed;top:0;left:0;right:0;height:3px;z-index:100;background:transparent}
+.readbar{position:absolute;bottom:0;left:0;right:0;height:3px;z-index:1;background:transparent}
 .readbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--brand-deep))}
 .post-layout.post .side .toc-card{background:color-mix(in srgb,var(--card) 78%,transparent);
 backdrop-filter:blur(12px) saturate(1.4);-webkit-backdrop-filter:blur(12px) saturate(1.4)}
@@ -181,6 +182,10 @@ backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) satu
 border-top:1px solid var(--bd2)}
 .post-layout.post .side .toc-card{box-shadow:none;margin:0}
 .post-layout.post .side .toc-card ul{max-height:38vh}
+.post-layout.post .side{border-radius:20px 20px 0 0}
+.post-layout.post .side::before{content:"";display:block;width:40px;height:4px;border-radius:99px;background:var(--bd2);margin:10px auto 2px}
+.post-layout.post .side .toc-card{background:transparent;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;border-radius:20px 20px 0 0}
+.post-layout.post .side summary{min-height:52px;font-size:15px}
 }
 /* a11y: skip link, visible focus, TOC depth, reduced motion */
 .skip{position:absolute;left:16px;top:-72px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none}
@@ -192,7 +197,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 
-</style></head><body class="is-post"><div class="readbar" aria-hidden="true"><i id="readbarfill"></i></div><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="post-layout post"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/category/general-seo/">general-seo</a></nav><aside class="side"></aside><article class="post"><span class="cat">general-seo</span><h1>Website Speed: Is It A Critical Factor For SEO In 2024?</h1><div class="meta">2024-06-02 · 13 min read · seo</div><img class="feat" src="/uploads/2024/06/14.png" alt="Website Speed: Is It A Critical Factor For SEO In 2024?" onerror="this.style.display='none'"><details class="toc-card" open><summary><span class="toc-k">On this page</span></summary><ul><li class="toc-h2"><a href="#what-is-website-speed-and-why-does-it-matter">What is website speed and why does it matter?</a></li><li class="toc-h2"><a href="#so-does-website-speed-boost-seo-rankings">So, does website speed boost SEO rankings?</a></li><li class="toc-h2"><a href="#is-my-website-slow">Is my website slow?</a></li><li class="toc-h2"><a href="#how-to-use-google-pagespeed-insights-to-assess-website-perfo">How to use Google PageSpeed Insights to assess website performance?</a></li><li class="toc-h3"><a href="#1-first-contentful-paint-fcp">#1: First Contentful Paint (FCP)</a></li><li class="toc-h3"><a href="#2-largest-contentful-paint-lcp">#2: Largest Contentful Paint (LCP)</a></li><li class="toc-h3"><a href="#3-cumulative-layout-shift-cls">#3: Cumulative Layout Shift (CLS)</a></li><li class="toc-h3"><a href="#4-interaction-to-next-paint-inp">#4: Interaction to Next Paint (INP):</a></li><li class="toc-h2"><a href="#how-do-i-make-my-website-blazing-fast">How do I make my website blazing fast?</a></li><li class="toc-h3"><a href="#1-compressing-images-before-uploading">#1: Compressing images before uploading</a></li><li class="toc-h3"><a href="#2-using-caching-plugins">#2: Using caching plugins</a></li><li class="toc-h3"><a href="#3-using-lightweight-themes">#3: Using lightweight themes</a></li><li class="toc-h3"><a href="#4-premium-hosting">#4: Premium hosting</a></li><li class="toc-h3"><a href="#5-css-and-js-minification">#5: CSS and JS minification</a></li><li class="toc-h3"><a href="#6-using-a-content-delivery-network">#6: Using a Content Delivery Network</a></li><li class="toc-h3"><a href="#7-limiting-the-number-of-plugins">#7: Limiting the number of plugins</a></li><li class="toc-h2"><a href="#wrap-up">Wrap up!</a></li></ul></details><div class="prose">
+
+</style></head><body class="is-post"><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav><div class="readbar" aria-hidden="true"><i id="readbarfill"></i></div></header><main class="wrap" id="main" tabindex="-1"><div class="post-layout post"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/category/general-seo/">general-seo</a></nav><aside class="side"></aside><article class="post"><span class="cat">general-seo</span><h1>Website Speed: Is It A Critical Factor For SEO In 2024?</h1><div class="meta">2024-06-02 · 13 min read · seo</div><img class="feat" src="/uploads/2024/06/14.png" alt="Website Speed: Is It A Critical Factor For SEO In 2024?" onerror="this.style.display='none'"><details class="toc-card" open><summary><span class="toc-k">On this page</span></summary><ul><li class="toc-h2"><a href="#what-is-website-speed-and-why-does-it-matter">What is website speed and why does it matter?</a></li><li class="toc-h2"><a href="#so-does-website-speed-boost-seo-rankings">So, does website speed boost SEO rankings?</a></li><li class="toc-h2"><a href="#is-my-website-slow">Is my website slow?</a></li><li class="toc-h2"><a href="#how-to-use-google-pagespeed-insights-to-assess-website-perfo">How to use Google PageSpeed Insights to assess website performance?</a></li><li class="toc-h3"><a href="#1-first-contentful-paint-fcp">#1: First Contentful Paint (FCP)</a></li><li class="toc-h3"><a href="#2-largest-contentful-paint-lcp">#2: Largest Contentful Paint (LCP)</a></li><li class="toc-h3"><a href="#3-cumulative-layout-shift-cls">#3: Cumulative Layout Shift (CLS)</a></li><li class="toc-h3"><a href="#4-interaction-to-next-paint-inp">#4: Interaction to Next Paint (INP):</a></li><li class="toc-h2"><a href="#how-do-i-make-my-website-blazing-fast">How do I make my website blazing fast?</a></li><li class="toc-h3"><a href="#1-compressing-images-before-uploading">#1: Compressing images before uploading</a></li><li class="toc-h3"><a href="#2-using-caching-plugins">#2: Using caching plugins</a></li><li class="toc-h3"><a href="#3-using-lightweight-themes">#3: Using lightweight themes</a></li><li class="toc-h3"><a href="#4-premium-hosting">#4: Premium hosting</a></li><li class="toc-h3"><a href="#5-css-and-js-minification">#5: CSS and JS minification</a></li><li class="toc-h3"><a href="#6-using-a-content-delivery-network">#6: Using a Content Delivery Network</a></li><li class="toc-h3"><a href="#7-limiting-the-number-of-plugins">#7: Limiting the number of plugins</a></li><li class="toc-h2"><a href="#wrap-up">Wrap up!</a></li></ul></details><div class="prose">
 <h2 class="wp-block-heading" id="what-is-website-speed-and-why-does-it-matter"><strong>What is website speed and why does it matter?</strong></h2>
 
 <p>Nowadays, having a website isn't enough if it can't load up quickly.</p>

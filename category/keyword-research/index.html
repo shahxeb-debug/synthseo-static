@@ -3,6 +3,7 @@ if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='
 if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();</script><style>
 
 
+
 :root{--bg:#fff;--ink:#181E15;--body:#2b3027;--muted:#6C6E79;--brand:#FF904C;--brand-deep:#4A5BE0;--brand-tint:#FFEDDD;--hero-wash:#FDF1E7;--btn:#0d0d0d;--btn-ink:#fff;--brand-ink:#B45309;
 --card:#fff;--bd:rgba(13,13,13,.05);--bd2:rgba(13,13,13,.08);--code:#f5f5f5;
 --sh:rgba(0,0,0,.03) 0 2px 4px;--btnsh:rgba(0,0,0,.06) 0 1px 2px;--r:16px;--max:1120px;
@@ -107,13 +108,13 @@ img{max-width:100%;height:auto}
 .prose img{max-width:100%;height:auto}
 body{font-size:clamp(15px,.4vw + 14px,17px)}
 @media(max-width:768px){
-.nav{flex-wrap:wrap;gap:10px;padding:8px 16px}
+.nav{flex-wrap:wrap;gap:8px;padding:6px 12px}
 .ham{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;order:2}
 #themebtn{order:3}
 .nav a.nl{display:none;width:100%;padding:12px 4px;min-height:44px;font-size:16px}
 .nav .searchbox{display:none;width:100%;order:4}
-.nav .searchbox input{width:100%}
-.nav.open a.nl,.nav.open .searchbox{display:block}
+.nav .searchbox input{width:100%;padding:8px 14px;font-size:14px}
+.ham,#themebtn{width:40px;height:40px;min-width:40px;min-height:40px}.brand{font-size:17px}.nav.open a.nl,.nav.open .searchbox{display:block}
 .feat-post{grid-template-columns:1fr;gap:20px;padding:28px 0 32px}
 .hero{padding:40px 24px;margin-top:20px}
 .hero h1{font-size:clamp(30px,8vw,42px)}
@@ -151,7 +152,7 @@ border:1px solid var(--bd2);background:var(--card);color:var(--ink);font:500 14p
 }
 
 /* reader changelist: readbar, glass TOC, author, keep-reading, icon share */
-.readbar{position:fixed;top:0;left:0;right:0;height:3px;z-index:100;background:transparent}
+.readbar{position:absolute;bottom:0;left:0;right:0;height:3px;z-index:1;background:transparent}
 .readbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--brand-deep))}
 .post-layout.post .side .toc-card{background:color-mix(in srgb,var(--card) 78%,transparent);
 backdrop-filter:blur(12px) saturate(1.4);-webkit-backdrop-filter:blur(12px) saturate(1.4)}
@@ -181,6 +182,10 @@ backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) satu
 border-top:1px solid var(--bd2)}
 .post-layout.post .side .toc-card{box-shadow:none;margin:0}
 .post-layout.post .side .toc-card ul{max-height:38vh}
+.post-layout.post .side{border-radius:20px 20px 0 0}
+.post-layout.post .side::before{content:"";display:block;width:40px;height:4px;border-radius:99px;background:var(--bd2);margin:10px auto 2px}
+.post-layout.post .side .toc-card{background:transparent;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;border-radius:20px 20px 0 0}
+.post-layout.post .side summary{min-height:52px;font-size:15px}
 }
 /* a11y: skip link, visible focus, TOC depth, reduced motion */
 .skip{position:absolute;left:16px;top:-72px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none}
@@ -192,7 +197,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 
-</style></head><body><div class="readbar" aria-hidden="true"><i id="readbarfill"></i></div><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav></header><main class="wrap" id="main" tabindex="-1"><div class="hero slim"><span class="eyebrow">Topic · 1 guide</span><h1 style="text-transform:capitalize">keyword-research</h1></div><div class="rows"><div class="row"><span class="cat">keyword-research</span><h2><a href="/keyword-research/keyword-research-first-step/">Keyword Research: The 1st Step To Successful Search Engine Optimisation</a></h2><p>Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand your users.</p><div class="meta">2024-02-23 · 25 min read</div></div></div></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"What page speed really means, how Google measures it — FCP, LCP, CLS, INP — and the fixes worth doing first.","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"Ten free plugins covering SEO, analytics, and editing — what each one does and how to pick between them.","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Why readable content ranks better: simple language, tighter sentences, clear structure, and three tests to check your work.","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"What link building actually is, why links still move rankings, and three white-hat ways to earn them.","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"How to find what your users search for, judge intent and competition, and turn it into content that ranks.","c":"keyword-research","r":"25 min read"}];</script><script>
+
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="nav" id="topnav" aria-label="Primary"><a class="brand" href="/">Synth<i>SEO</i></a><button class="ham" onclick="__toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">☰</button><a class="nl" href="/">Home</a><a class="nl" href="/about/">About</a><a class="nl" href="/contact/">Contact</a><span class="searchbox" role="search"><label class="vh" for="q">Search guides</label><input id="q" type="search" placeholder="Search guides…" autocomplete="off" aria-controls="qres" aria-expanded="false"><span class="searchres" id="qres"></span></span><button class="iconbtn" id="themebtn" onclick="__toggleTheme()" aria-label="Switch to dark mode" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav><div class="readbar" aria-hidden="true"><i id="readbarfill"></i></div></header><main class="wrap" id="main" tabindex="-1"><div class="hero slim"><span class="eyebrow">Topic · 1 guide</span><h1 style="text-transform:capitalize">keyword-research</h1></div><div class="rows"><div class="row"><span class="cat">keyword-research</span><h2><a href="/keyword-research/keyword-research-first-step/">Keyword Research: The 1st Step To Successful Search Engine Optimisation</a></h2><p>Keyword research is the practice of discovering keywords your users search for. In other words, it helps you understand your users.</p><div class="meta">2024-02-23 · 25 min read</div></div></div></main><footer><div class="wrap"><span>SynthSEO — Practical SEO guides, explained simply.</span><span class="sp"><a class="nl" href="/about/">About</a><a class="nl" href="/blogs/">All posts</a><a class="nl" href="/contact/">Contact</a></span></div></footer><script>window.__POSTS=[{"t":"Website Speed: Is It A Critical Factor For SEO In 2024?","u":"/general-seo/website-speed-in-seo/","d":"What page speed really means, how Google measures it — FCP, LCP, CLS, INP — and the fixes worth doing first.","c":"general-seo","r":"13 min read"},{"t":"10 Best Free WordPress Plugins You Cannot Miss","u":"/plugins/best-free-wordpress-plugins/","d":"Ten free plugins covering SEO, analytics, and editing — what each one does and how to pick between them.","c":"plugins","r":"14 min read"},{"t":"Content Readability 101: The Importance of Readability in SEO","u":"/writing/importance-of-readability-in-seo/","d":"Why readable content ranks better: simple language, tighter sentences, clear structure, and three tests to check your work.","c":"writing","r":"13 min read"},{"t":"3 Proven Link Building Strategies For Increased Traffic","u":"/link-building/proven-link-building-strategies/","d":"What link building actually is, why links still move rankings, and three white-hat ways to earn them.","c":"link-building","r":"13 min read"},{"t":"Keyword Research: The 1st Step To Successful Search Engine Optimisation","u":"/keyword-research/keyword-research-first-step/","d":"How to find what your users search for, judge intent and competition, and turn it into content that ranks.","c":"keyword-research","r":"25 min read"}];</script><script>
 (function(){var box=document.getElementById('q'),res=document.getElementById('qres');
 if(!box)return;var idx=window.__POSTS||[];
 function show(){res.style.display='block';box.setAttribute('aria-expanded','true');}
